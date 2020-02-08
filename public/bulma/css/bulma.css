@@ -10830,3 +10830,12 @@ label.panel-block:hover {
   padding: 1rem 0.5rem 1rem;
 }
 /*# sourceMappingURL=bulma.css.map */
+
+#store-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/store1-copy.jpg");
+  height: 50%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
