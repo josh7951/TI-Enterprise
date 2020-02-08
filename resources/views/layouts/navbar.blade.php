@@ -14,8 +14,9 @@
       <div class="navbar-start">
         <a href="/about" class="navbar-item">Our Team</a>
         <a href="/team-gallery" class="navbar-item">Gallery</a>
-        <a href="/bait-store" class="navbar-item">Bait Store</a>
+        <a href="/store" class="navbar-item">Bait Store</a>
         <a href="#" class="navbar-item">Contact Us</a>
+        
       </div>
     </div>
   </div>

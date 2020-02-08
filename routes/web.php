@@ -23,6 +23,6 @@ Route::get('/team-gallery', function() {
     return view('gallery');
 });
 
-Route::get('/bait-store', function() {
+Route::get('/store', function() {
     return view('store');
 });
