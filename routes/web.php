@@ -26,3 +26,7 @@ Route::get('/team-gallery', function() {
 Route::get('/store', function() {
     return view('store');
 });
+
+Route::get('/contact', function() {
+    return view('contact');
+});
