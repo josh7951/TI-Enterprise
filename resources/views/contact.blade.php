@@ -8,4 +8,12 @@
   </ul>
 </nav>
 <h1>Contact Form</h1>
+<section class="hero is-medium is-primary is-bold" id="store-hero">
+  <div class="hero-body">
+      <div class="container" style="text-align:center;">
+        <h1 class="title is-3">Contact Us</h1>
+        <h2 class="subtitle">test</h2>
+      </div>
+  </div>
+</section>
 @endsection
