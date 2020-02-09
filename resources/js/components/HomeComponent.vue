@@ -1,4 +1,20 @@
 <template>
+  <div>
+    <!--Hero Section-->
+    <section class="hero is-medium is-light is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title">
+            Light bold title
+          </p>
+          <p class="subtitle">
+            Light bold subtitle
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--End Hero Section-->
+    <hr style="font-weight:bold;">
   <div class="columns">
     <div class="column is-8">
       <!--Start Bait Store Section-->
@@ -89,12 +105,13 @@
     </section>
     <!--End Section-->
   </div>
+  </div>
 </template>
 
 <script>
   export default {
     mounted() {
-      console.log('Home Content mounted.')
+      console.log('Home Component mounted.')
     }
   }
 </script>
