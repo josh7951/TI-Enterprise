@@ -2020,6 +2020,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Home Content mounted.');
@@ -37591,16 +37637,98 @@ var staticRenderFns = [
               ])
             ])
           ])
-        ])
+        ]),
+        _vm._v(" "),
+        _c("hr")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c("h1", [_vm._v("Team Member Section")]),
+      _c("section", { staticClass: "section" }, [
+        _c("h1", [_vm._v("True Image Bass Team")]),
         _vm._v(" "),
-        _c("p", { staticClass: "bd-notification is-primary" }, [
-          _vm._v(
-            "Second column with more content. This is so you can see the vertical alignment."
-          )
+        _c("img", {
+          staticClass: "image is-square",
+          staticStyle: { "padding-top": "0rem" },
+          attrs: { src: "https://bulma.io/images/placeholders/480x480.png" }
+        }),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              staticClass: "image is-128x128 team-member-home",
+              attrs: { src: "https://bulma.io/images/placeholders/128x128.png" }
+            }),
+            _vm._v(" "),
+            _c("p", { staticClass: "name-home" }, [
+              _vm._v("First Name Last Name")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-narrow" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              staticClass: "image is-128x128 team-member-home",
+              attrs: { src: "https://bulma.io/images/placeholders/128x128.png" }
+            }),
+            _vm._v(" "),
+            _c("p", { staticClass: "name-home" }, [
+              _vm._v("First Name Last Name")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              staticClass: "image is-128x128 team-member-home",
+              attrs: { src: "https://bulma.io/images/placeholders/128x128.png" }
+            }),
+            _vm._v(" "),
+            _c("p", { staticClass: "name-home" }, [
+              _vm._v("First Name Last Name")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-narrow" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              staticClass: "image is-128x128 team-member-home",
+              attrs: { src: "https://bulma.io/images/placeholders/128x128.png" }
+            }),
+            _vm._v(" "),
+            _c("p", { staticClass: "name-home" }, [
+              _vm._v("First Name Last Name")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              staticClass: "image is-128x128 team-member-home",
+              attrs: { src: "https://bulma.io/images/placeholders/128x128.png" }
+            }),
+            _vm._v(" "),
+            _c("p", { staticClass: "name-home" }, [
+              _vm._v("First Name Last Name")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-narrow" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              staticClass: "image is-128x128 team-member-home",
+              attrs: { src: "https://bulma.io/images/placeholders/128x128.png" }
+            }),
+            _vm._v(" "),
+            _c("p", { staticClass: "name-home" }, [
+              _vm._v("First Name Last Name")
+            ])
+          ])
         ])
       ])
     ])

@@ -1,6 +1,7 @@
 <template>
   <div class="columns">
     <div class="column is-8">
+      <!--Start Bait Store Section-->
       <section class="section">
           <div class="columns">
             <div class="column is-one-fifth">
@@ -13,7 +14,9 @@
             </div>
           </div>
       </section>
+      <!--End Section-->
     <hr>
+      <!--Start blahblah Section-->
       <section class="section">
         <div class="columns">
           <div class="column is-one-fifth">
@@ -25,7 +28,9 @@
           </div>
         </div>
       </section>
+      <!--End Section-->
     <hr>
+      <!--Start blahblah Section-->
       <section class="section">
         <div class="columns">
           <div class="column is-one-fifth">
@@ -37,11 +42,52 @@
           </div>
         </div>
       </section>
+      <!--End Section-->
+      <hr>
     </div>
-    <div class="column">
-    <h1>Team Member Section</h1>
-      <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
-    </div>
+    <!--Start Team Member Section-->
+    <section class="section">
+      <h1>True Image Bass Team</h1>
+        <img class="image is-square" src="https://bulma.io/images/placeholders/480x480.png" style="padding-top: 0rem;">
+        <br>
+      <!--Row 1-->
+      <div class="columns is-variable is-2 is-mobile">
+        <div class="column">
+          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png"> 
+            <p class="name-home">First Name Last Name</p>
+        </div>
+        <div class="column is-narrow"></div>
+        <div class="column">
+          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
+          <p class="name-home">First Name Last Name</p> 
+        </div>
+      </div>
+      <!--Row 2-->
+      <div class="columns is-variable is-2 is-mobile">
+        <div class="column">
+          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
+          <p class="name-home">First Name Last Name</p>
+        </div>
+        <div class="column is-narrow"></div>
+        <div class="column">
+          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
+          <p class="name-home">First Name Last Name</p> 
+        </div>
+      </div>
+        <!--Row 3-->
+      <div class="columns is-variable is-2 is-mobile">
+        <div class="column">
+          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
+          <p class="name-home">First Name Last Name</p> 
+        </div>
+        <div class="column is-narrow"></div>
+        <div class="column">
+          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png"> 
+          <p class="name-home">First Name Last Name</p>
+        </div>
+      </div>
+    </section>
+    <!--End Section-->
   </div>
 </template>
 
