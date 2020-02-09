@@ -50079,13 +50079,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! C:\Users\Raven\Projects\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! C:\Users\Raven\Projects\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! C:\Users\josh7951\Documents\GitHub\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\josh7951\Documents\GitHub\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> de5a4a20868879e1d8fb4cc0d9cb4d8d03a8f125
 
 
 /***/ })

@@ -16,10 +16,6 @@
         <a href="/team-gallery" class="navbar-item">Gallery</a>
         <a href="#" class="navbar-item">Tournaments</a>
         <a href="/store" class="navbar-item">Bait Store</a>
-<<<<<<< HEAD
-        <a href="/contact" class="navbar-item">Contact Us</a>
-        
-=======
         <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">Resources</a>
         <div class="navbar-dropdown">
@@ -37,7 +33,6 @@
           <a class="navbar-item" href="/contact" style="color:#41CAE5; font-weight: bold;">Contact Us</a>
         </div>
       </div>
->>>>>>> de5a4a20868879e1d8fb4cc0d9cb4d8d03a8f125
       </div>
     </div>
   </div>
