@@ -2051,6 +2051,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Home Component mounted.');
@@ -37679,13 +37680,26 @@ var staticRenderFns = [
           _c("hr")
         ]),
         _vm._v(" "),
-        _c("section", { staticClass: "section" }, [
-          _c("h1", [_vm._v("True Image Bass Team")]),
+        _c("section", { staticClass: "section has-background-white-ter" }, [
+          _c(
+            "h1",
+            {
+              staticClass: "subtitle is-3",
+              staticStyle: { "text-align": "center", "font-weight": "bold" }
+            },
+            [_vm._v("True Image Bass Team")]
+          ),
+          _vm._v(" "),
+          _c("hr"),
           _vm._v(" "),
           _c("img", {
-            staticClass: "image is-square",
+            staticClass: "image is-square team-member-home",
             staticStyle: { "padding-top": "0rem" },
-            attrs: { src: "https://bulma.io/images/placeholders/480x480.png" }
+            attrs: {
+              title: "Team Photo",
+              src: "\\images\\True-Image-Team.jpg",
+              alt: "True-Image-Team.jpg"
+            }
           }),
           _vm._v(" "),
           _c("br"),
@@ -37695,12 +37709,44 @@ var staticRenderFns = [
               _c("img", {
                 staticClass: "image is-128x128 team-member-home",
                 attrs: {
-                  src: "https://bulma.io/images/placeholders/128x128.png"
+                  title: "Gabriel Diaz",
+                  src: "\\images\\team-members\\gabriel-diaz.jpg",
+                  alt: "gabriel-diaz.jpg"
+                }
+              }),
+              _vm._v(" "),
+              _c("p", { staticClass: "name-home" }, [_vm._v("Gabriel Diaz")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column is-narrow" }),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c("img", {
+                staticClass: "image is-128x128 team-member-home",
+                attrs: {
+                  title: "Chris Garcia",
+                  src: "\\images\\team-members\\chris-garcia.jpg",
+                  alt: "chris-garcia.jpg"
+                }
+              }),
+              _vm._v(" "),
+              _c("p", { staticClass: "name-home" }, [_vm._v("Chris Garcia")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
+            _c("div", { staticClass: "column" }, [
+              _c("img", {
+                staticClass: "image is-128x128 team-member-home",
+                attrs: {
+                  title: "Gregory Halliman",
+                  src: "\\images\\team-members\\gregory-halliman.jpg",
+                  alt: "gregory-halliman.jpg"
                 }
               }),
               _vm._v(" "),
               _c("p", { staticClass: "name-home" }, [
-                _vm._v("First Name Last Name")
+                _vm._v("Gregory Halliman")
               ])
             ]),
             _vm._v(" "),
@@ -37710,13 +37756,13 @@ var staticRenderFns = [
               _c("img", {
                 staticClass: "image is-128x128 team-member-home",
                 attrs: {
-                  src: "https://bulma.io/images/placeholders/128x128.png"
+                  title: "Brian Nunn",
+                  src: "\\images\\team-members\\brian-nunn.jpg",
+                  alt: "brian-nunn.jpg"
                 }
               }),
               _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [
-                _vm._v("First Name Last Name")
-              ])
+              _c("p", { staticClass: "name-home" }, [_vm._v("Brian Nunn")])
             ])
           ]),
           _vm._v(" "),
@@ -37725,43 +37771,13 @@ var staticRenderFns = [
               _c("img", {
                 staticClass: "image is-128x128 team-member-home",
                 attrs: {
-                  src: "https://bulma.io/images/placeholders/128x128.png"
+                  title: "Melvin Williams",
+                  src: "\\images\\team-members\\melvin-williams.jpg",
+                  alt: "melvin-williams.jpg"
                 }
               }),
               _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [
-                _vm._v("First Name Last Name")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "column is-narrow" }),
-            _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c("img", {
-                staticClass: "image is-128x128 team-member-home",
-                attrs: {
-                  src: "https://bulma.io/images/placeholders/128x128.png"
-                }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [
-                _vm._v("First Name Last Name")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
-            _c("div", { staticClass: "column" }, [
-              _c("img", {
-                staticClass: "image is-128x128 team-member-home",
-                attrs: {
-                  src: "https://bulma.io/images/placeholders/128x128.png"
-                }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [
-                _vm._v("First Name Last Name")
-              ])
+              _c("p", { staticClass: "name-home" }, [_vm._v("Melvin Williams")])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "column is-narrow" }),
@@ -50379,14 +50395,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./resources/js/components/HomeComponent.vue ***!
   \***************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeComponent.vue?vue&type=template&id=782dcf83& */ "./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&");
 /* harmony import */ var _HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/HomeComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50416,7 +50433,7 @@ component.options.__file = "resources/js/components/HomeComponent.vue"
 /*!****************************************************************************!*\
   !*** ./resources/js/components/HomeComponent.vue?vue&type=script&lang=js& ***!
   \****************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50531,8 +50548,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Raven\Projects\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Raven\Projects\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\josh7951\Documents\GitHub\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\josh7951\Documents\GitHub\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

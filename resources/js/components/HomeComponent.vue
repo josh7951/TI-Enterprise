@@ -62,39 +62,40 @@
       <hr>
     </div>
     <!--Start Team Member Section-->
-    <section class="section">
-      <h1>True Image Bass Team</h1>
-        <img class="image is-square" src="https://bulma.io/images/placeholders/480x480.png" style="padding-top: 0rem;">
+    <section class="section has-background-white-ter">
+      <h1 class="subtitle is-3" style="text-align: center; font-weight: bold;">True Image Bass Team</h1>
+      <hr>
+        <img class="image is-square team-member-home" title="Team Photo" src="\images\True-Image-Team.jpg" alt="True-Image-Team.jpg" style="padding-top: 0rem;">
         <br>
       <!--Row 1-->
       <div class="columns is-variable is-2 is-mobile">
         <div class="column">
-          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png"> 
-            <p class="name-home">First Name Last Name</p>
+          <img class="image is-128x128 team-member-home" title="Gabriel Diaz" src="\images\team-members\gabriel-diaz.jpg" alt="gabriel-diaz.jpg"> 
+            <p class="name-home">Gabriel Diaz</p>
         </div>
         <div class="column is-narrow"></div>
         <div class="column">
-          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
-          <p class="name-home">First Name Last Name</p> 
+          <img class="image is-128x128 team-member-home" title="Chris Garcia" src="\images\team-members\chris-garcia.jpg" alt="chris-garcia.jpg">
+          <p class="name-home">Chris Garcia</p>
         </div>
       </div>
       <!--Row 2-->
       <div class="columns is-variable is-2 is-mobile">
         <div class="column">
-          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
-          <p class="name-home">First Name Last Name</p>
+          <img class="image is-128x128 team-member-home" title="Gregory Halliman" src="\images\team-members\gregory-halliman.jpg" alt="gregory-halliman.jpg">
+          <p class="name-home">Gregory Halliman</p>
         </div>
         <div class="column is-narrow"></div>
         <div class="column">
-          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
-          <p class="name-home">First Name Last Name</p> 
+          <img class="image is-128x128 team-member-home" title="Brian Nunn" src="\images\team-members\brian-nunn.jpg" alt="brian-nunn.jpg">
+          <p class="name-home">Brian Nunn</p> 
         </div>
       </div>
         <!--Row 3-->
       <div class="columns is-variable is-2 is-mobile">
         <div class="column">
-          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png">
-          <p class="name-home">First Name Last Name</p> 
+          <img class="image is-128x128 team-member-home" title="Melvin Williams" src="\images\team-members\melvin-williams.jpg" alt="melvin-williams.jpg">
+          <p class="name-home">Melvin Williams</p> 
         </div>
         <div class="column is-narrow"></div>
         <div class="column">
