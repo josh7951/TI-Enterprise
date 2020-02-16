@@ -2052,6 +2052,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Home Component mounted.');
@@ -37561,18 +37573,43 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("section", { staticClass: "hero is-medium is-light is-bold" }, [
-        _c("div", { staticClass: "hero-body" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("p", { staticClass: "title" }, [
-              _vm._v("\n          Light bold title\n        ")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "subtitle" }, [
-              _vm._v("\n          Light bold subtitle\n        ")
+      _c("section", { staticClass: "hero is-small is-light is-bold" }, [
+        _c(
+          "div",
+          {
+            staticClass: "hero-body is-fluid",
+            staticStyle: { "text-align": "center" }
+          },
+          [
+            _c("div", { staticClass: "slideshow-container" }, [
+              _c("div", { staticClass: "carousel-slides fade" }, [
+                _c("img", { attrs: { src: "\\images\\slide1.jpg", alt: "" } }),
+                _vm._v(" "),
+                _c("div", { staticClass: "text" }, [_vm._v("Test 1 ")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-slides fade" }, [
+                _c("img", { attrs: { src: "\\images\\slide2.jpg", alt: "" } }),
+                _vm._v(" "),
+                _c("div", { staticClass: "text" }, [_vm._v("Test 2 ")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-slides fade" }, [
+                _c("img", { attrs: { src: "\\images\\slide3.jpg", alt: "" } }),
+                _vm._v(" "),
+                _c("div", { staticClass: "text" }, [_vm._v("Test 3 ")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "dots-container" }, [
+                _c("span", { staticClass: "dot" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "dot" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "dot" })
+              ])
             ])
-          ])
-        ])
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("hr", { staticStyle: { "font-weight": "bold" } }),
@@ -50273,7 +50310,35 @@ Vue.component('store-content', __webpack_require__(/*! ./components/StoreCompone
 
 var app = new Vue({
   el: '#app'
-});
+}); //Carousel
+
+console.log("Carousel Inserted");
+var slideIndex = 0;
+
+var showSlides = function showSlides() {
+  var slides = document.getElementsByClassName("carousel-slides");
+  var dots = document.getElementsByClassName("dot");
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  for (var _i = 0; _i < dots.length; _i++) {
+    dots[_i].className = dots[_i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  setTimeout(showSlides, 7000);
+};
+
+showSlides();
 
 /***/ }),
 

@@ -1,16 +1,28 @@
 <template>
   <div>
     <!--Hero Section-->
-    <section class="hero is-medium is-light is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <p class="title">
-            Light bold title
-          </p>
-          <p class="subtitle">
-            Light bold subtitle
-          </p>
+    <section class="hero is-small is-light is-bold">
+      <div class="hero-body is-fluid" style="text-align: center;">
+      <div class="slideshow-container">
+        <div class="carousel-slides fade">
+            <img src="\images\slide1.jpg" alt="">
+            <div class="text">Test 1 </div>
         </div>
+        <div class="carousel-slides fade">
+            <img src="\images\slide2.jpg" alt="">
+            <div class="text">Test 2 </div>
+        </div>
+        <div class="carousel-slides fade">
+            <img src="\images\slide3.jpg" alt="">
+            <div class="text">Test 3 </div>
+        </div>
+        <div class="dots-container">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <!--End Carousel-->
       </div>
     </section>
     <!--End Hero Section-->
