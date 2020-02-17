@@ -1,31 +1,33 @@
 <template>
   <div>
-    <!--Hero Section-->
-    <section class="hero is-small is-light is-bold">
-      <div class="hero-body is-fluid" style="text-align: center;">
-      <div class="slideshow-container">
-        <div class="carousel-slides fade">
-            <img src="\images\slide1.jpg" alt="">
-            <div class="text">Test 1 </div>
-        </div>
-        <div class="carousel-slides fade">
-            <img src="\images\slide2.jpg" alt="">
-            <div class="text">Test 2 </div>
-        </div>
-        <div class="carousel-slides fade">
-            <img src="\images\slide3.jpg" alt="">
-            <div class="text">Test 3 </div>
-        </div>
-        <div class="dots-container">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+   <!--Begin Section--> 
+   <div class="slideshow-container">
+      <!--Slide 1-->
+      <div class="slides fade">
+        <img src="\images\slide1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
       </div>
-      <!--End Carousel-->
+
+      <div class="slides fade">
+        <img src="\images\slide2.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
       </div>
-    </section>
-    <!--End Hero Section-->
+      <!--Slide 3-->
+      <div class="slides fade">
+        <img src="\images\slide3.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      <!--Nav Cursors-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <!--Nav Dots-->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
     <hr style="font-weight:bold;">
   <div class="columns">
     <div class="column is-8">

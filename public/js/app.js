@@ -2064,6 +2064,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Home Component mounted.');
@@ -37573,43 +37575,60 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("section", { staticClass: "hero is-small is-light is-bold" }, [
-        _c(
-          "div",
-          {
-            staticClass: "hero-body is-fluid",
-            staticStyle: { "text-align": "center" }
-          },
-          [
-            _c("div", { staticClass: "slideshow-container" }, [
-              _c("div", { staticClass: "carousel-slides fade" }, [
-                _c("img", { attrs: { src: "\\images\\slide1.jpg", alt: "" } }),
-                _vm._v(" "),
-                _c("div", { staticClass: "text" }, [_vm._v("Test 1 ")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-slides fade" }, [
-                _c("img", { attrs: { src: "\\images\\slide2.jpg", alt: "" } }),
-                _vm._v(" "),
-                _c("div", { staticClass: "text" }, [_vm._v("Test 2 ")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-slides fade" }, [
-                _c("img", { attrs: { src: "\\images\\slide3.jpg", alt: "" } }),
-                _vm._v(" "),
-                _c("div", { staticClass: "text" }, [_vm._v("Test 3 ")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "dots-container" }, [
-                _c("span", { staticClass: "dot" }),
-                _vm._v(" "),
-                _c("span", { staticClass: "dot" }),
-                _vm._v(" "),
-                _c("span", { staticClass: "dot" })
-              ])
-            ])
-          ]
-        )
+      _c("div", { staticClass: "slideshow-container" }, [
+        _c("div", { staticClass: "slides fade" }, [
+          _c("img", {
+            staticStyle: { width: "100%" },
+            attrs: { src: "\\images\\slide1.jpg" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "text" }, [_vm._v("Caption Text")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "slides fade" }, [
+          _c("img", {
+            staticStyle: { width: "100%" },
+            attrs: { src: "\\images\\slide2.jpg" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "text" }, [_vm._v("Caption Two")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "slides fade" }, [
+          _c("img", {
+            staticStyle: { width: "100%" },
+            attrs: { src: "\\images\\slide3.jpg" }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "text" }, [_vm._v("Caption Three")])
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "prev", attrs: { onclick: "plusSlides(-1)" } }, [
+          _vm._v("❮")
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "next", attrs: { onclick: "plusSlides(1)" } }, [
+          _vm._v("❯")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("div", { staticStyle: { "text-align": "center" } }, [
+        _c("span", {
+          staticClass: "dot",
+          attrs: { onclick: "currentSlide(1)" }
+        }),
+        _vm._v(" "),
+        _c("span", {
+          staticClass: "dot",
+          attrs: { onclick: "currentSlide(2)" }
+        }),
+        _vm._v(" "),
+        _c("span", {
+          staticClass: "dot",
+          attrs: { onclick: "currentSlide(3)" }
+        })
       ]),
       _vm._v(" "),
       _c("hr", { staticStyle: { "font-weight": "bold" } }),
@@ -50310,35 +50329,7 @@ Vue.component('store-content', __webpack_require__(/*! ./components/StoreCompone
 
 var app = new Vue({
   el: '#app'
-}); //Carousel
-
-console.log("Carousel Inserted");
-var slideIndex = 0;
-
-var showSlides = function showSlides() {
-  var slides = document.getElementsByClassName("carousel-slides");
-  var dots = document.getElementsByClassName("dot");
-
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slideIndex++;
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  for (var _i = 0; _i < dots.length; _i++) {
-    dots[_i].className = dots[_i].className.replace(" active", "");
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 7000);
-};
-
-showSlides();
+});
 
 /***/ }),
 
@@ -50391,14 +50382,15 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!******************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue ***!
   \******************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
 /* harmony import */ var _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50428,7 +50420,7 @@ component.options.__file = "resources/js/components/ExampleComponent.vue"
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
