@@ -7,7 +7,6 @@
     <li class="is-active"><a href="#" aria-current="page">Contact Us</a></li>
   </ul>
 </nav>
-<h1>Contact Form</h1>
 
 
 <div class="columns">
@@ -21,7 +20,6 @@
   </div>
 
   <div class="column">
-
     <div class="field is-horizontal">
       <div class="field-body"> 
         <div class="field">
@@ -32,7 +30,7 @@
       
         <div class="field">
           <div class="control">
-            <input class="input" type="text" placeholder="Email">
+            <input class="input" name="user_email" type="email" placeholder="email@email.com">
           </div>
         </div>
       </div>
@@ -46,10 +44,9 @@
 
     <div class="field is-grouped is-grouped-right">
       <div class="control">
-        <button class="button is-link">Send</button>
+        <button class="button is-link" onclick="alert('test')">Send</button>
       </div>
     </div>
   </div>
-
 </div>
 @endsection
