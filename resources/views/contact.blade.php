@@ -12,11 +12,12 @@
 <div class="columns">
   <div class="column is-half">
     <h1 class="title is-1"> True Image Enterprise</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum, aperiam obcaecati, libero quibusdam temporibus dolorem nulla ut numquam nostrum nihil ipsam? Maiores laboriosam doloribus vel, itaque officiis exercitationem aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quae laborum, natus magni doloremque harum fugiat a, doloribus ab beatae delectus. Quia, error aliquam. Inventore iure soluta veritatis corrupti! Temporibus.</p>
+    <hr>
+    <p>Interested in joining our team? Send us an email or give us a call! We look forward to working with you! For all order inquiries, please email us at <a href="mailto:orders@ti-enterprises.com?Subject=Order%20Inquiry" target="_top">orders@ti-enterprises.com</a>.</p>
     <br><br>
     <p>209 W Ridgecrest Blvd. Suite 132<br>Ridgecrest, California 93555</p>
-    <p>Ray@TI-Enterprise.com</p>
-    <p>(760)382-1022</p>
+    <p><a href="mailto:ray@ti-enterprises.com?Subject=TI-Enterprise%20Inquiry" target="_top">ray@ti-enterprise.com</a></p>
+    <p><a href="tel:+1-760-382-1022">(760)382-1022</a></p>
   </div>
 
   <div class="column">

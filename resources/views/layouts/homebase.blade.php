@@ -24,9 +24,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="\js\app.js"></script>
     <script>
-      //Carousel
+    //Carousel
     console.log("Carousel Inserted")
-
+  
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -40,7 +40,7 @@
 
     function showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName("mySlides");
+      var slides = document.getElementsByClassName("slides");
       var dots = document.getElementsByClassName("dot");
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
@@ -52,6 +52,26 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
+    }
+
+    autoSlide();
+    function autoSlide(n) {
+      var i;
+      var slides = document.getElementsByClassName("slides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      if(slideIndex > slides.length){ slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      slideIndex++;
+      setTimeout(autoSlide, 5000);
     }
     </script>
   </body>
