@@ -8,6 +8,7 @@
   </ul>
 </nav>
 
+
 <div class="columns">
   <div class="column is-half">
     <h1 class="title is-1"> True Image Enterprise</h1>
@@ -20,7 +21,6 @@
   </div>
 
   <div class="column">
-
     <div class="field is-horizontal">
       <div class="field-body"> 
         <div class="field">
@@ -31,7 +31,7 @@
       
         <div class="field">
           <div class="control">
-            <input class="input" type="text" placeholder="Email">
+            <input class="input" name="user_email" type="email" placeholder="email@email.com">
           </div>
         </div>
       </div>
@@ -45,10 +45,9 @@
 
     <div class="field is-grouped is-grouped-right">
       <div class="control">
-        <button class="button is-link">Send</button>
+        <button class="button is-link" onclick="alert('test')">Send</button>
       </div>
     </div>
   </div>
-
 </div>
 @endsection
