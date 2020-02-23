@@ -24,9 +24,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="\js\app.js"></script>
     <script>
-      //Carousel
-    console.log("Carousel Inserted")
-
+    //Carousel
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -52,6 +50,21 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
+    }
+    console.log("Modal Testing")
+    // Modal
+    var modal = document.getElementById("homeModal");
+
+    var btn = document.getElementById("modalBtn");
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    window.onclick = fucntion(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
     }
     </script>
   </body>

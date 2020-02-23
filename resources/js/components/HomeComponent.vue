@@ -15,7 +15,7 @@
       <!--Slide 3-->
       <div class="slides fade">
         <img src="\images\slide3.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">Caption Test</div>
       </div>
       <!--Nav Cursors-->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -29,6 +29,41 @@
         <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
     <hr style="font-weight:bold;">
+    <div class="columns">
+      <div class="column">
+        <img src="\images\bass-fishing.jpg" alt="">
+        <p>Every Bass Fisherman dreams of finding a secret spot that is loaded with bass . . .</p>
+        <button style="float:right" id="modalBtn" class="button is-link is-light is-small">Read More</button>
+        <!--Modal 1-->
+        <div id="homeModal" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">Modal title</p>
+              <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+              <!-- Content ... -->
+            </section>
+            <footer class="modal-card-foot">
+              <button class="button is-success">Save changes</button>
+              <button class="button">Cancel</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <img src="\images\test.jpg" alt="">
+        <p>Wesley Burnett is a prime example of careful planning for progress . . .</p>
+        <button style="float:right" class="button is-link is-light is-small">Read More</button>
+      </div>
+      <div class="column">
+        <img src="\images\1-bassoriginal.jpg" alt="">
+        <p>For a beginning bass angler, bass fishing can quickly become expensive . . .</p>
+        <button style="float:right" class="button is-link is-light is-small">Read More</button>
+      </div>
+    </div>
+    <hr>
   <div class="columns">
     <div class="column is-8">
       <!--Start Bait Store Section-->

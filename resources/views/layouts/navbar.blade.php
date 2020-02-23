@@ -3,6 +3,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
         <img title="TI-Enterprise" src="\images\logo.png" alt="TI-Enterprise.png">
+        &nbspTI-ENTERPRISE
       </a>
       <span class="navbar-burger burger" data-target="navMenu">
         <span></span>
