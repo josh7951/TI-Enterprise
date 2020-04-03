@@ -37686,34 +37686,7 @@ var staticRenderFns = [
               attrs: { id: "modalBtn" }
             },
             [_vm._v("Read More")]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "modal", attrs: { id: "homeModal" } }, [
-            _c("div", { staticClass: "modal-background" }),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-card" }, [
-              _c("header", { staticClass: "modal-card-head" }, [
-                _c("p", { staticClass: "modal-card-title" }, [
-                  _vm._v("Modal title")
-                ]),
-                _vm._v(" "),
-                _c("button", {
-                  staticClass: "delete",
-                  attrs: { "aria-label": "close" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("section", { staticClass: "modal-card-body" }),
-              _vm._v(" "),
-              _c("footer", { staticClass: "modal-card-foot" }, [
-                _c("button", { staticClass: "button is-success" }, [
-                  _vm._v("Save changes")
-                ]),
-                _vm._v(" "),
-                _c("button", { staticClass: "button" }, [_vm._v("Cancel")])
-              ])
-            ])
-          ])
+          )
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
@@ -37975,6 +37948,33 @@ var staticRenderFns = [
               _c("p", { staticClass: "name-home" }, [
                 _vm._v("First Name Last Name")
               ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal", attrs: { id: "homeModal" } }, [
+          _c("div", { staticClass: "modal-background" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-card" }, [
+            _c("header", { staticClass: "modal-card-head" }, [
+              _c("p", { staticClass: "modal-card-title" }, [
+                _vm._v("Modal title")
+              ]),
+              _vm._v(" "),
+              _c("button", {
+                staticClass: "delete",
+                attrs: { "aria-label": "close" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("section", { staticClass: "modal-card-body" }),
+            _vm._v(" "),
+            _c("footer", { staticClass: "modal-card-foot" }, [
+              _c("button", { staticClass: "button is-success" }, [
+                _vm._v("Save changes")
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "button" }, [_vm._v("Cancel")])
             ])
           ])
         ])
