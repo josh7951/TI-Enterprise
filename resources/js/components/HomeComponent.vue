@@ -34,23 +34,6 @@
         <img src="\images\bass-fishing.jpg" alt="">
         <p>Every Bass Fisherman dreams of finding a secret spot that is loaded with bass . . .</p>
         <button style="float:right" id="modalBtn" class="button is-link is-light is-small">Read More</button>
-        <!--Modal 1-->
-        <div id="homeModal" class="modal">
-          <div class="modal-background"></div>
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Modal title</p>
-              <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-              <!-- Content ... -->
-            </section>
-            <footer class="modal-card-foot">
-              <button class="button is-success">Save changes</button>
-              <button class="button">Cancel</button>
-            </footer>
-          </div>
-        </div>
       </div>
       <div class="column">
         <img src="\images\test.jpg" alt="">
@@ -154,6 +137,23 @@
       </div>
     </section>
     <!--End Section-->
+        <!--Modal 1-->
+    <div id="homeModal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Save changes</button>
+          <button class="button">Cancel</button>
+        </footer>
+      </div>
+    </div>
   </div>
   </div>
 </template>

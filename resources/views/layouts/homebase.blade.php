@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="\bulma\css\bulma.css">
   </head>
   <body>
-      @include('layouts.navbar')
+      
 
-      <div id="app" class="container">
-        @yield('content')
+      <div id="app">
+        <navbar></navbar>
+        <div class="container">
+          @yield('content')
+        </div>
       </div>
 
   <footer class="footer">
@@ -72,6 +75,24 @@
       dots[slideIndex-1].className += " active";
       slideIndex++;
       setTimeout(autoSlide, 5000);
+    }
+
+    console.log("Modal Testing");
+    // Get Modal
+    var modal = document.getElementById("homeModal");
+    // Get button
+    var btn = document.getElementById("modalBtn");
+
+    var close = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.dispaly = "none";
+      }
     }
     </script>
   </body>
