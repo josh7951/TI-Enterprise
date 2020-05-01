@@ -15,7 +15,7 @@
         "cross-env": "^5.2.1",
         "deepmerge": "^4.2.2",
         "fibers": "^4.0.2",
-        "jquery": "^3.2",
+        "jquery": "^3.5.0",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
@@ -26,7 +26,9 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "acorn": "^7.1.1",
         "bulma": "^0.8.0",
+        "minimist": "^1.2.5",
         "npm-watch": "^0.6.0",
         "vue": "^2.6.11",
         "vue-carousel": "^0.18.0",

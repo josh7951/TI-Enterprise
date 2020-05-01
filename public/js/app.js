@@ -2159,7 +2159,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -38106,11 +38105,10 @@ var staticRenderFns = [
       _c("img", {
         attrs: {
           title: "TI-Enterprise",
-          src: "\\images\\logo.png",
+          src: "\\images\\LOGO\\True-Image-Logo-V2.png",
           alt: "TI-Enterprise.png"
         }
-      }),
-      _vm._v("\n        TI-ENTERPRISE\n      ")
+      })
     ])
   },
   function() {
