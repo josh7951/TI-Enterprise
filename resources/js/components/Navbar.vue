@@ -3,7 +3,8 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img title="TI-Enterprise" src="\images\LOGO\True-Image-Logo-V2.png" alt="TI-Enterprise.png">
+          <img title="TI-Enterprise" src="\images\LOGO\True-Image-Logo-V1.png" alt="TI-Enterprise.png">
+          True Image
         </a>
         <span class="navbar-burger burger" :class="{'is-active':isActive}" @click="burgerToggle">
           <span></span>

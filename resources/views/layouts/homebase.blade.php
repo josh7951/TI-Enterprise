@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="\bulma\css\bulma.css">
   </head>
   <body>
-      
-
-      <div id="app">
-        <navbar></navbar>
-        <div class="container">
-          @yield('content')
-        </div>
-      </div>
-
+  <div id="app">
+    <navbar></navbar>
+    <div class="container">
+      @yield('content')
+    </div>
+  </div>
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
@@ -23,7 +20,6 @@
       </p>
     </div>
   </footer>
-    
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="\js\app.js"></script>
     <script>

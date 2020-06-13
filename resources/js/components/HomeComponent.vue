@@ -4,17 +4,22 @@
    <div class="slideshow-container">
       <!--Slide 1-->
       <div class="slides fade">
-        <img src="\images\slide1.jpg" style="width:100%">
+        <img src="\images\carousel\true-img.png" style="width:100%">
         <div class="text">Caption Text</div>
       </div>
 
       <div class="slides fade">
-        <img src="\images\slide2.jpg" style="width:100%">
+        <img src="\images\carousel\slide1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="slides fade">
+        <img src="\images\carousel\slide2.jpg" style="width:100%">
         <div class="text">Caption Two</div>
       </div>
       <!--Slide 3-->
       <div class="slides fade">
-        <img src="\images\slide3.jpg" style="width:100%">
+        <img src="\images\carousel\slide3.jpg" style="width:100%">
         <div class="text">Caption Test</div>
       </div>
       <!--Nav Cursors-->
@@ -27,6 +32,7 @@
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
       </div>
     <hr style="font-weight:bold;">
     <div class="columns">
