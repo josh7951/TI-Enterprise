@@ -13,6 +13,8 @@
       @yield('content')
     </div>
   </div>
+  <br>
+  <br>
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
@@ -87,7 +89,7 @@
 
     window.onclick = function(event) {
       if (event.target == modal) {
-        modal.style.dispaly = "none";
+        modal.style.display = "none";
       }
     }
     </script>

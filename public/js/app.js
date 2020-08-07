@@ -2238,6 +2238,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -38456,21 +38457,6 @@ var staticRenderFns = [
               _c("img", {
                 staticClass: "image is-128x128 team-member-home",
                 attrs: {
-                  title: "Chris Garcia",
-                  src: "\\images\\team-members\\chris-garcia.jpg",
-                  alt: "chris-garcia.jpg"
-                }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [_vm._v("Chris Garcia")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
-            _c("div", { staticClass: "column" }, [
-              _c("img", {
-                staticClass: "image is-128x128 team-member-home",
-                attrs: {
                   title: "Gregory Halliman",
                   src: "\\images\\team-members\\gregory-halliman.jpg",
                   alt: "gregory-halliman.jpg"
@@ -38480,10 +38466,10 @@ var staticRenderFns = [
               _c("p", { staticClass: "name-home" }, [
                 _vm._v("Gregory Halliman")
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "column is-narrow" }),
-            _vm._v(" "),
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
             _c("div", { staticClass: "column" }, [
               _c("img", {
                 staticClass: "image is-128x128 team-member-home",
@@ -38495,10 +38481,10 @@ var staticRenderFns = [
               }),
               _vm._v(" "),
               _c("p", { staticClass: "name-home" }, [_vm._v("Brian Nunn")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column is-narrow" }),
+            _vm._v(" "),
             _c("div", { staticClass: "column" }, [
               _c("img", {
                 staticClass: "image is-128x128 team-member-home",
@@ -38510,21 +38496,6 @@ var staticRenderFns = [
               }),
               _vm._v(" "),
               _c("p", { staticClass: "name-home" }, [_vm._v("Melvin Williams")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "column is-narrow" }),
-            _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c("img", {
-                staticClass: "image is-128x128 team-member-home",
-                attrs: {
-                  src: "https://bulma.io/images/placeholders/128x128.png"
-                }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [
-                _vm._v("First Name Last Name")
-              ])
             ])
           ])
         ]),
@@ -38643,9 +38614,18 @@ var staticRenderFns = [
         _vm._v("Tournaments")
       ]),
       _vm._v(" "),
-      _c("a", { staticClass: "navbar-item", attrs: { href: "/store" } }, [
-        _vm._v("Bait Store")
-      ]),
+      _c(
+        "a",
+        {
+          staticClass: "navbar-item",
+          attrs: {
+            href:
+              "http://www.basstacklemaster.com/SearchResults.asp?Search=True+Image",
+            target: "_blank"
+          }
+        },
+        [_vm._v("Bait Store")]
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "navbar-item has-dropdown is-hoverable" }, [
         _c("a", { staticClass: "navbar-link" }, [_vm._v("Resources")]),
@@ -51806,8 +51786,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\jmeji\Documents\Github\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\jmeji\Documents\Github\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\jmeji\Documents\GitHub\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\jmeji\Documents\GitHub\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

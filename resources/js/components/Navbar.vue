@@ -17,7 +17,8 @@
           <a href="/about" class="navbar-item">Our Team</a>
           <a href="/team-gallery" class="navbar-item">Gallery</a>
           <a href="#" class="navbar-item">Tournaments</a>
-          <a href="/store" class="navbar-item">Bait Store</a>
+          <a href="http://www.basstacklemaster.com/SearchResults.asp?Search=True+Image" class="navbar-item" target="_blank">Bait Store</a>
+          <!--<a href="/store" class="navbar-item">Bait Store</a>-->
           <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">Resources</a>
           <div class="navbar-dropdown">
