@@ -30,3 +30,7 @@ Route::get('/store', function() {
 Route::get('/contact', function() {
     return view('contact');
 });
+
+Route::get('/ray-caldwell', function() {
+    return view('caldwell');
+});

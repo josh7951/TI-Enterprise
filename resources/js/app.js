@@ -25,6 +25,7 @@ Vue.component('team-content', require('./components/TeamComponent.vue').default)
 Vue.component('store-content', require('./components/StoreComponent.vue').default);
 Vue.component('contact-content', require('./components/Contact.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('caldwell-content', require('./components/CaldwellComponent.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

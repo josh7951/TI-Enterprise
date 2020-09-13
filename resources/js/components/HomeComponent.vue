@@ -1,39 +1,13 @@
 <template>
   <div>
-   <!--Begin Section--> 
-   <div class="slideshow-container">
-      <!--Slide 1-->
-      <div class="slides fade">
-        <img src="\images\carousel\true-img.png" style="width:100%">
-        <div class="text">Caption Text</div>
+   <!--Begin Hero Section--> 
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <img src="\images\carousel\true-img.png" style="width:100%">
+        </div>
       </div>
-
-      <div class="slides fade">
-        <img src="\images\carousel\slide1.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="slides fade">
-        <img src="\images\carousel\slide2.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-      <!--Slide 3-->
-      <div class="slides fade">
-        <img src="\images\carousel\slide3.jpg" style="width:100%">
-        <div class="text">Caption Test</div>
-      </div>
-      <!--Nav Cursors-->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      <!--Nav Dots-->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-        <span class="dot" onclick="currentSlide(4)"></span> 
-      </div>
+    </section>
     <hr style="font-weight:bold;">
     <div class="columns">
       <div class="column">
@@ -63,7 +37,7 @@
             </div>
             <div class="column">
               <p>Visit the TI-Enterprise True Image Bait Shop. True Image worms are supple for maximum action yet tough enough to catch multiple fish without tearing. Technologically advanced color patterns with powerful scents in multiple styles and sizes for all bass fishing techniques make True Image worms the strongest on the market.<br>
-              <a style="float:right" class="button is-link is-light is-small" href="/store">Bait Store&raquo;</a>
+              <a style="float:right" class="button is-link is-light is-small" href="http://www.basstacklemaster.com/SearchResults.asp?Search=True+Image" target="_blank">Bait Store&raquo;</a>
               </p>
             </div>
           </div>
@@ -88,11 +62,11 @@
       <section class="section">
         <div class="columns">
           <div class="column is-one-fifth">
-            <img class="image is-128x128" src="https://bulma.io/images/placeholders/128x128.png"> 
+            <img class="image is-128x128" src="\images\team-members\Caldwell\13-raybigbass.png"> 
           </div>
           <div column="column">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima fuga excepturi velit, distinctio, sapiente esse quod veniam natus ipsam magni? Maiores porro necessitatibus libero fuga sapiente beatae quasi exercitationem!<br>
-            <a style="float:right" class="button is-link is-light is-small" href="/">Temp Button&raquo;</a></p>
+              <p>My Name is Ray Caldwell owner of True Image Enterprise. I’m from Longview, Texas and I grew up fishing a lot of different lakes with my dad D.C. Caldwell. We fished lakes like Lake Folk, Lake O’ the pines, Toledo Bend, Sam Raybourn, and Caddo Lake. . .<br>
+            <a style="float:right" class="button is-link is-light is-small" href="/ray-caldwell">Read On&raquo;</a></p>
           </div>
         </div>
       </section>

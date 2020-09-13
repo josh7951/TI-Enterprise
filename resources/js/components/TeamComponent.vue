@@ -14,7 +14,7 @@
             <div class="column">
               <h1 class="title is-2">Ray Caldwell</h1>
               <p>My Name is Ray Caldwell owner of True Image Enterprise. I’m from Longview, Texas and I grew up fishing a lot of different lakes with my dad D.C. Caldwell. We fished lakes like Lake Folk, Lake O’ the pines, Toledo Bend, Sam Raybourn, and Caddo Lake. . .<br>
-              <a style="float:right" class="button is-link is-light is-small" href="/store">Read More&raquo;</a>
+              <a style="float:right" class="button is-link is-light is-small" href="/ray-caldwell">Read More&raquo;</a>
               </p>
             </div>
           </div>
