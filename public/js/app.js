@@ -1924,6 +1924,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2348,6 +2376,41 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38004,13 +38067,107 @@ var staticRenderFns = [
       ),
       _vm._v(" "),
       _c("section", { staticClass: "section" }, [
+        _c("div", { staticClass: "columns" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              attrs: {
+                title: "Ray Caldwell at Lake Isabella",
+                src: "\\images\\team-members\\Caldwell\\Lake-Isabella.jpg",
+                alt: "Ray Caldwell catching a Bass Fish at Lake Isabella"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              attrs: {
+                title: "Fishing Team posing with Awards",
+                src:
+                  "\\images\\team-members\\Caldwell\\Lake-Isabella-Tournament.jpg",
+                alt: "Lake Isabella Fishing Tournament Awards"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("img", {
+              attrs: {
+                title: "Bass Caught at Silverwood MBAA Tournament",
+                src:
+                  "\\images\\team-members\\Caldwell\\MBAA-Tourney-Silverwood.jpg",
+                alt: "Bass Fish caught at Silverwood Tournament"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
         _c("h1", { staticClass: "title is-1" }, [_vm._v("Meet the Owner!")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "bio-paragraph" }, [
+          _vm._v(
+            "My Name is Ray Caldwell - owner of True Image Enterprise. I’m from Longview, Texas and I grew up fishing a lot of different lakes with my dad D.C. Caldwell. We fished lakes like Lake Folk, Lake O’ the pines, Toledo Bend, Sam Raybourn, and Caddo Lake."
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("p", { staticClass: "bio-paragraph" }, [
+          _vm._v(
+            "During my Naval Career, I fished as a non-boater in some MBAA (Military Bass Anglers Association) draw tournaments. Later as a Defense Contract worker, my job brought me out west to Ridgecrest, CA. where I soon found out this was a different fishology. That Stern 14 & 17 lb. test line was the same as fishing with cable in the west. What worked in Alabama, Mississippi, Texas and Georgia was a thing of the past."
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("p", { staticClass: "bio-paragraph" }, [
+          _vm._v(
+            'Well while thinking Wal-Mart and Bill Dance had lied to me all these years, a co-worker at the Naval Weapons Center named Jeff Stuart invited me to fish some tournaments which were MBAA.  My first tournament was in Yuma, AZ. on the Colorado River and the first partner I drew was Dale Taff.  He looked at my tackle, shook his head and laughed, then asked me: “Are you trying to scare the fish".  I really pondered the thought because I had never weighted a fish in the west and did not catch a fish that day in the tournament.  It’s bad enough not to do well in a tournament even worse when you know you fished badly! These days were the early 1990’s years in the west.'
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus iste nulla vel qui deleniti beatae aspernatur, sunt laborum debitis mollitia dolorem sed magnam libero exercitationem ea ad! Eligendi, praesentium."
+            "However, believing that a winner never quits and quitter never wins my accomplishments are:"
+          ),
+          _c("br"),
+          _vm._v(" "),
+          _c("strong", [_vm._v("As a Director:")]),
+          _c("br"),
+          _vm._v(
+            "\n      I am the recipient of 3 Director Achievement awards. Two of them are National Awards; 1996 ranked (7th) of 10, and 1997 (3rd) of 10; directors chosen for this award (which are hard to get) when you are rated with other directors in 48 states that Direct MBAA Programs. In the year 2000 was another proud moment when I received my (3rd) Director’s award from American Bass Association President Dave Plotnic who gave me the opportunity of a lifetime to Direct Bass Tournaments in five of his regions from 1998 to 2007. I’m also a Life member of BASS with the rare 30 yr. patch. I am also a Member of the Association of B.A.S.S Professionals. I’ve been an active member and volunteer in Conservation and habitats efforts in the state of California for Lake Isabella, Lake Castaic, Lake Pyramid, Lake Casitas, and Lake Cachuma."
+          ),
+          _c("br"),
+          _vm._v(" "),
+          _c("strong", [_vm._v("As a Fisherman:")]),
+          _c("br"),
+          _vm._v(
+            "\n      1st place win Dec.2000 Yuma, Az.at the Colorado River (where I sucked 10yrs. earlier). I also placed 1st at Pyramid Lake in May 2000, and big fish awards in both MBAA tournaments.  One 2nd place win, three 3rd place wins, one 5th place, three 8th place and multiple top 10 & 20 finishes. Ranked 5th in the National standing in 1997 among Navy fisherman fishing MBAA programs. I’ve qualified for 6 MBAA Classic Tournament at Lake Seminole, GA. 1993, Kerr Reservoir, NC 1994, Lake Murray, SC 1995, Hudson River, NY 1996, Lake Seminole, GA. 1997, and Lake Texoma, TX 1998."
           )
-        ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("p", { staticClass: "bio-paragraph" }, [
+          _vm._v(
+            "Today, I am currently employed at Northrop Grumman Corporation and the humble owner of True Image Enterprise. Because I have learned a great deal about tournament fishing from many top pro anglers like Drop Shot Legend Dick Trask, Western Legend Don Iovino, and William (Bill) Hall who mentored and taught me for 3 years to become a tournament director and weigh master, I bring to you one of the best soft plastic fishing baits for deep water structure on the market today. I encourage you to read all about them on this website and how to place your order. I do appreciate all your business."
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("i", [_vm._v('Thank you and “keep a tight line".')]),
+        _c("br"),
+        _vm._v(" "),
+        _c("i", { staticStyle: { "font-weight": "bold" } }, [
+          _vm._v("Sincerely,")
+        ]),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "bio-signature" }, [_vm._v("Ray Caldwell")])
       ])
     ])
   }
@@ -38623,10 +38780,6 @@ var staticRenderFns = [
         [_vm._v("Gallery")]
       ),
       _vm._v(" "),
-      _c("a", { staticClass: "navbar-item", attrs: { href: "#" } }, [
-        _vm._v("Tournaments")
-      ]),
-      _vm._v(" "),
       _c(
         "a",
         {
@@ -39079,7 +39232,6 @@ var staticRenderFns = [
         _c("div", { staticClass: "columns" }, [
           _c("div", { staticClass: "column is-one-fifth" }, [
             _c("img", {
-              staticClass: "image is-128x128",
               attrs: {
                 src: "\\images\\team-members\\Caldwell\\13-raybigbass.png"
               }
@@ -39105,6 +39257,92 @@ var staticRenderFns = [
                 [_vm._v("Read More»")]
               )
             ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "section" }, [
+        _c("div", { staticClass: "columns" }, [
+          _c("div", { staticClass: "column is-one-fifth" }, [
+            _c("img", {
+              staticClass: "image is-128x1281",
+              attrs: {
+                title: "Gabriel Diaz",
+                src: "\\images\\team-members\\gabriel-diaz.jpg",
+                alt: "Fisherman Gabriel Diaz"
+              }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "title is-4" }, [_vm._v("Gabriel Diaz")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-one-fifth" }, [
+            _c("img", {
+              staticClass: "image is-128x1281",
+              attrs: {
+                title: "Gregory Halliman",
+                src: "\\images\\team-members\\gregory-halliman.jpg",
+                alt: "Fisherman Gregory Halliman"
+              }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "title is-4" }, [
+              _vm._v("Gregory Halliman")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-one-fifth" }, [
+            _c("img", {
+              staticClass: "image is-128x1281",
+              attrs: {
+                title: "Brian Nunn",
+                src: "\\images\\team-members\\brian-nunn.jpg",
+                alt: "Fisherman Brian Nunn"
+              }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "title is-4" }, [_vm._v("Brian Nunn")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-one-fifth" }, [
+            _c("img", {
+              staticClass: "image is-128x1281",
+              attrs: {
+                title: "Melvin Williams",
+                src: "\\images\\team-members\\melvin-williams.jpg",
+                alt: "Fisherman Melvin Williams"
+              }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "title is-4" }, [_vm._v("Melvin Williams")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-one-fifth" }, [
+            _c("img", {
+              staticClass: "image is-128x1281",
+              attrs: {
+                title: "Kyle Baker",
+                src: "\\images\\team-members\\Baker\\8-kylebakerlrg.jpg",
+                alt: "Fisherman Kyle Baker"
+              }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "title is-4" }, [_vm._v("Kyle Baker")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns" }, [
+          _c("div", { staticClass: "column is-one-fifth" }, [
+            _c("img", {
+              staticClass: "image is-128x1281",
+              attrs: {
+                title: "Chris Garcia",
+                src: "\\images\\team-members\\chris-garcia.jpg",
+                alt: "Fisherman Chris Garcia"
+              }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "title is-4" }, [_vm._v("Chris Garcia")])
           ])
         ])
       ])
@@ -51869,8 +52107,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\jmeji\Documents\GitHub\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\jmeji\Documents\GitHub\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\jmeji\Documents\Github\TI-Enterprise\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\jmeji\Documents\Github\TI-Enterprise\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

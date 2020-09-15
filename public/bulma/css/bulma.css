@@ -10934,3 +10934,14 @@ label.panel-block:hover {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+/* Bio Paragraphs*/
+.bio-paragraph {
+  text-indent: 3rem;
+}
+
+.bio-signature {
+  font-size:7rem;
+  font-style:italic;
+  font-family:times;
+}
