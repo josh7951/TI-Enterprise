@@ -16,7 +16,7 @@
         "deepmerge": "^4.2.2",
         "fibers": "^4.0.3",
         "jquery": "^3.5.1",
-        "laravel-mix": "^5.0.4",
+        "laravel-mix": "^5.0.5",
         "lodash": "^4.17.19",
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
@@ -29,7 +29,7 @@
         "acorn": "^7.3.1",
         "bulma": "^0.8.2",
         "minimist": "^1.2.5",
-        "npm-watch": "^0.6.0",
+        "npm-watch": "^0.7.0",
         "vue": "^2.6.11",
         "vue-carousel": "^0.18.0",
         "vuetify": "^2.3.7"
