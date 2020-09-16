@@ -39,6 +39,7 @@
         <i style="font-weight:bold">Sincerely,</i><br>
         <span class="bio-signature">Ray Caldwell</span>
     </section>
+    <a href="/about">&laquo; Back to Team Page</a>
   </div>
 </template>
 

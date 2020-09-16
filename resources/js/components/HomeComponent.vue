@@ -13,17 +13,17 @@
       <div class="column">
         <img src="\images\bass-fishing.jpg" alt="">
         <p>Every Bass Fisherman dreams of finding a secret spot that is loaded with bass . . .</p>
-        <button style="float:right" id="modalBtn" class="button is-link is-light is-small">Read More</button>
+        <button style="float:right" id="modalBtn" class="button is-link is-small is-outlined">Read More</button>
       </div>
       <div class="column">
         <img src="\images\test.jpg" alt="">
         <p>Wesley Burnett is a prime example of careful planning for progress . . .</p>
-        <button style="float:right" class="button is-link is-light is-small">Read More</button>
+        <button style="float:right" class="button is-link is-small is-outlined">Read More</button>
       </div>
       <div class="column">
         <img src="\images\1-bassoriginal.jpg" alt="">
         <p>For a beginning bass angler, bass fishing can quickly become expensive . . .</p>
-        <button style="float:right" class="button is-link is-light is-small">Read More</button>
+        <button style="float:right" class="button is-link is-small is-outlined">Read More</button>
       </div>
     </div>
     <hr>
@@ -37,7 +37,7 @@
             </div>
             <div class="column">
               <p>Visit the TI-Enterprise True Image Bait Shop. True Image worms are supple for maximum action yet tough enough to catch multiple fish without tearing. Technologically advanced color patterns with powerful scents in multiple styles and sizes for all bass fishing techniques make True Image worms the strongest on the market.<br>
-              <a style="float:right" class="button is-link is-light is-small" href="http://www.basstacklemaster.com/SearchResults.asp?Search=True+Image" target="_blank">Bait Store&raquo;</a>
+              <a style="float:right" class="button is-link is-small is-outlined" href="http://www.basstacklemaster.com/SearchResults.asp?Search=True+Image" target="_blank">Bait Store&raquo;</a>
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@
           </div>
           <div column="column">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima fuga excepturi velit, distinctio, sapiente esse quod veniam natus ipsam magni? Maiores porro necessitatibus libero fuga sapiente beatae quasi exercitationem!<br>
-            <a style="float:right" class="button is-link is-light is-small" href="/">Temp Button&raquo;</a></p>
+            <a style="float:right" class="button is-link is-small is-outlined" href="/">Temp Button&raquo;</a></p>
           </div>
         </div>
       </section>
@@ -66,7 +66,7 @@
           </div>
           <div column="column">
               <p>My Name is Ray Caldwell owner of True Image Enterprise. I’m from Longview, Texas and I grew up fishing a lot of different lakes with my dad D.C. Caldwell. We fished lakes like Lake Folk, Lake O’ the pines, Toledo Bend, Sam Raybourn, and Caddo Lake. . .<br>
-            <a style="float:right" class="button is-link is-light is-small" href="/ray-caldwell">Read On&raquo;</a></p>
+            <a style="float:right" class="button is-link is-small is-outlined" href="/ray-caldwell">Read On&raquo;</a></p>
           </div>
         </div>
       </section>

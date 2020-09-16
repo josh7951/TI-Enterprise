@@ -7,6 +7,11 @@
     <li class="is-active"><a href="#" aria-current="page">Gallery</a></li>
   </ul>
 </nav>
-<h1>Gallery Test Header</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis tempore ipsum rerum quibusdam amet eos aspernatur, magni perferendis accusamus quasi corporis. Similique magni natus, mollitia aspernatur quia voluptatibus quaerat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quos repellendus obcaecati ea, eos, cum maxime eligendi nam accusantium libero ut! Modi, sequi reiciendis minus provident cumque at itaque perferendis.</p>
+<section class="hero is-medium is-success is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1" style="text-align:center;">Gallery Coming Soon!</h1>
+    </div>
+  </div>
+</section>
 @endsection

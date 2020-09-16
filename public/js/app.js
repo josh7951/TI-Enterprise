@@ -1952,6 +1952,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2376,6 +2377,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38168,7 +38175,9 @@ var staticRenderFns = [
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "bio-signature" }, [_vm._v("Ray Caldwell")])
-      ])
+      ]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "/about" } }, [_vm._v("« Back to Team Page")])
     ])
   }
 ]
@@ -38425,7 +38434,7 @@ var staticRenderFns = [
           _c(
             "button",
             {
-              staticClass: "button is-link is-light is-small",
+              staticClass: "button is-link is-small is-outlined",
               staticStyle: { float: "right" },
               attrs: { id: "modalBtn" }
             },
@@ -38445,7 +38454,7 @@ var staticRenderFns = [
           _c(
             "button",
             {
-              staticClass: "button is-link is-light is-small",
+              staticClass: "button is-link is-small is-outlined",
               staticStyle: { float: "right" }
             },
             [_vm._v("Read More")]
@@ -38466,7 +38475,7 @@ var staticRenderFns = [
           _c(
             "button",
             {
-              staticClass: "button is-link is-light is-small",
+              staticClass: "button is-link is-small is-outlined",
               staticStyle: { float: "right" }
             },
             [_vm._v("Read More")]
@@ -38497,7 +38506,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "button is-link is-light is-small",
+                      staticClass: "button is-link is-small is-outlined",
                       staticStyle: { float: "right" },
                       attrs: {
                         href:
@@ -38535,7 +38544,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "button is-link is-light is-small",
+                      staticClass: "button is-link is-small is-outlined",
                       staticStyle: { float: "right" },
                       attrs: { href: "/" }
                     },
@@ -38569,7 +38578,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "button is-link is-light is-small",
+                      staticClass: "button is-link is-small is-outlined",
                       staticStyle: { float: "right" },
                       attrs: { href: "/ray-caldwell" }
                     },
@@ -39239,18 +39248,24 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "column" }, [
-            _c("h1", { staticClass: "title is-2" }, [_vm._v("Ray Caldwell")]),
+            _c("h2", { staticClass: "title is-2" }, [
+              _vm._v("The Owner - Ray Caldwell")
+            ]),
             _vm._v(" "),
             _c("p", [
               _vm._v(
                 "My Name is Ray Caldwell owner of True Image Enterprise. I’m from Longview, Texas and I grew up fishing a lot of different lakes with my dad D.C. Caldwell. We fished lakes like Lake Folk, Lake O’ the pines, Toledo Bend, Sam Raybourn, and Caddo Lake. . ."
               ),
               _c("br"),
+              _vm._v(
+                "\n          During my Naval Career, I fished as a non-boater in some MBAA (Military Bass Anglers Association) draw tournaments. Later as a Defense Contract worker, my job brought me out west to Ridgecrest, CA. where I soon found out this was a different fishology. That Stern 14 & 17 lb. test line was the same as fishing with cable in the west. What worked in Alabama, Mississippi, Texas and Georgia was a thing of the past. . .\n          "
+              ),
+              _c("br"),
               _vm._v(" "),
               _c(
                 "a",
                 {
-                  staticClass: "button is-link is-light is-small",
+                  staticClass: "button is-link is-small is-outlined",
                   staticStyle: { float: "right" },
                   attrs: { href: "/ray-caldwell" }
                 },
@@ -39261,90 +39276,119 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
+      _c("h2", { staticClass: "title is-3" }, [
+        _c("i", [_vm._v("The TI-Enterprise Team")])
+      ]),
+      _vm._v(" "),
       _c("section", { staticClass: "section" }, [
-        _c("div", { staticClass: "columns" }, [
-          _c("div", { staticClass: "column is-one-fifth" }, [
-            _c("img", {
-              staticClass: "image is-128x1281",
-              attrs: {
-                title: "Gabriel Diaz",
-                src: "\\images\\team-members\\gabriel-diaz.jpg",
-                alt: "Fisherman Gabriel Diaz"
-              }
-            }),
+        _c(
+          "div",
+          { staticClass: "columns", staticStyle: { "text-align": "center" } },
+          [
+            _c("div", { staticClass: "column is-one-fifth" }, [
+              _c("img", {
+                staticClass: "is-1by1",
+                attrs: {
+                  title: "Gabriel Diaz",
+                  src: "\\images\\team-members\\gabriel-diaz.jpg",
+                  alt: "Fisherman Gabriel Diaz"
+                }
+              }),
+              _vm._v(" "),
+              _c("h2", { staticClass: "title is-4" }, [_vm._v("Gabriel Diaz")])
+            ]),
             _vm._v(" "),
-            _c("h2", { staticClass: "title is-4" }, [_vm._v("Gabriel Diaz")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column is-one-fifth" }, [
-            _c("img", {
-              staticClass: "image is-128x1281",
-              attrs: {
-                title: "Gregory Halliman",
-                src: "\\images\\team-members\\gregory-halliman.jpg",
-                alt: "Fisherman Gregory Halliman"
-              }
-            }),
+            _c("div", { staticClass: "column is-one-fifth" }, [
+              _c("img", {
+                staticClass: "is-1by1",
+                attrs: {
+                  title: "Gregory Halliman",
+                  src: "\\images\\team-members\\gregory-halliman.jpg",
+                  alt: "Fisherman Gregory Halliman"
+                }
+              }),
+              _vm._v(" "),
+              _c("h2", { staticClass: "title is-4" }, [
+                _vm._v("Gregory Halliman")
+              ])
+            ]),
             _vm._v(" "),
-            _c("h2", { staticClass: "title is-4" }, [
-              _vm._v("Gregory Halliman")
+            _c("div", { staticClass: "column is-one-fifth" }, [
+              _c("img", {
+                staticClass: "is-1by1",
+                attrs: {
+                  title: "Brian Nunn",
+                  src: "\\images\\team-members\\brian-nunn2.jpg",
+                  alt: "Fisherman Brian Nunn"
+                }
+              }),
+              _vm._v(" "),
+              _c("h2", { staticClass: "title is-4" }, [_vm._v("Brian Nunn")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column is-one-fifth" }, [
+              _c("img", {
+                staticClass: "is-1by1",
+                attrs: {
+                  title: "Melvin Williams",
+                  src: "\\images\\team-members\\melvin-williams.jpg",
+                  alt: "Fisherman Melvin Williams"
+                }
+              }),
+              _vm._v(" "),
+              _c("h2", { staticClass: "title is-4" }, [
+                _vm._v("Melvin Williams")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column is-one-fifth" }, [
+              _c("img", {
+                staticClass: "is-1by1",
+                attrs: {
+                  title: "Kyle Baker",
+                  src: "\\images\\team-members\\Baker\\kyle-baker.jpg",
+                  alt: "Fisherman Kyle Baker"
+                }
+              }),
+              _vm._v(" "),
+              _c("h2", { staticClass: "title is-4" }, [_vm._v("Kyle Baker")])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column is-one-fifth" }, [
-            _c("img", {
-              staticClass: "image is-128x1281",
-              attrs: {
-                title: "Brian Nunn",
-                src: "\\images\\team-members\\brian-nunn.jpg",
-                alt: "Fisherman Brian Nunn"
-              }
-            }),
-            _vm._v(" "),
-            _c("h2", { staticClass: "title is-4" }, [_vm._v("Brian Nunn")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column is-one-fifth" }, [
-            _c("img", {
-              staticClass: "image is-128x1281",
-              attrs: {
-                title: "Melvin Williams",
-                src: "\\images\\team-members\\melvin-williams.jpg",
-                alt: "Fisherman Melvin Williams"
-              }
-            }),
-            _vm._v(" "),
-            _c("h2", { staticClass: "title is-4" }, [_vm._v("Melvin Williams")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column is-one-fifth" }, [
-            _c("img", {
-              staticClass: "image is-128x1281",
-              attrs: {
-                title: "Kyle Baker",
-                src: "\\images\\team-members\\Baker\\8-kylebakerlrg.jpg",
-                alt: "Fisherman Kyle Baker"
-              }
-            }),
-            _vm._v(" "),
-            _c("h2", { staticClass: "title is-4" }, [_vm._v("Kyle Baker")])
-          ])
-        ]),
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "columns" }, [
-          _c("div", { staticClass: "column is-one-fifth" }, [
-            _c("img", {
-              staticClass: "image is-128x1281",
-              attrs: {
-                title: "Chris Garcia",
-                src: "\\images\\team-members\\chris-garcia.jpg",
-                alt: "Fisherman Chris Garcia"
-              }
-            }),
+        _c(
+          "div",
+          { staticClass: "columns", staticStyle: { "text-align": "center" } },
+          [
+            _c("div", { staticClass: "column is-one-fifth" }, [
+              _c("img", {
+                staticClass: "is-1by1",
+                attrs: {
+                  title: "Chris Garcia",
+                  src: "\\images\\team-members\\chris-garcia.jpg",
+                  alt: "Fisherman Chris Garcia"
+                }
+              }),
+              _vm._v(" "),
+              _c("h2", { staticClass: "title is-4" }, [_vm._v("Chris Garcia")])
+            ]),
             _vm._v(" "),
-            _c("h2", { staticClass: "title is-4" }, [_vm._v("Chris Garcia")])
-          ])
-        ])
+            _c("div", { staticClass: "column is-one-fifth" }, [
+              _c("img", {
+                staticClass: "is-1by1",
+                attrs: {
+                  title: "Christopher Dixon",
+                  src: "\\images\\team-members\\christopher-dixon.jpg",
+                  alt: "Fisherman Christopher Dixon"
+                }
+              }),
+              _vm._v(" "),
+              _c("h2", { staticClass: "title is-4" }, [
+                _vm._v("Christopher Dixon")
+              ])
+            ])
+          ]
+        )
       ])
     ])
   }
