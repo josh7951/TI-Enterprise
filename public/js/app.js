@@ -2239,6 +2239,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Home Component mounted.');
@@ -38553,7 +38555,9 @@ var staticRenderFns = [
                 _c("img", {
                   staticClass: "image is-128x128",
                   attrs: {
-                    src: "https://bulma.io/images/placeholders/128x128.png"
+                    title: "TI-Enterprise Blue Logo",
+                    src: "\\images\\LOGO\\True-Image-Logo-V1.png",
+                    alt: "TI Minimalist Logo"
                   }
                 })
               ]),
@@ -38561,7 +38565,7 @@ var staticRenderFns = [
               _c("div", { attrs: { column: "column" } }, [
                 _c("p", [
                   _vm._v(
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima fuga excepturi velit, distinctio, sapiente esse quod veniam natus ipsam magni? Maiores porro necessitatibus libero fuga sapiente beatae quasi exercitationem!"
+                    "TI-Enterprise reguraly participates in fishing tourmanets. Keep up to date by visiting our Tournament Schedule here!"
                   ),
                   _c("br"),
                   _vm._v(" "),
@@ -38570,9 +38574,9 @@ var staticRenderFns = [
                     {
                       staticClass: "button is-link is-small is-outlined",
                       staticStyle: { float: "right" },
-                      attrs: { href: "/" }
+                      attrs: { href: "#", disabled: "" }
                     },
-                    [_vm._v("Temp Button »")]
+                    [_vm._v("Coming Soon!")]
                   )
                 ])
               ])
@@ -38587,7 +38591,9 @@ var staticRenderFns = [
                 _c("img", {
                   staticClass: "image is-128x128",
                   attrs: {
-                    src: "\\images\\team-members\\Caldwell\\13-raybigbass.png"
+                    title: "Big Ray with a Big Bass",
+                    src: "\\images\\team-members\\Caldwell\\13-raybigbass.png",
+                    alt: "Ray holding a Big Bass"
                   }
                 })
               ]),
@@ -38721,6 +38727,10 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("section", { staticClass: "modal-card-body" }, [
+              _c("img", {
+                attrs: { src: "\\images\\1-bassoriginal.jpg", alt: "" }
+              }),
+              _vm._v(" "),
               _c("p", [
                 _vm._v(
                   "For a beginning bass angler, bass fishing can quickly become expensive and complicated. Deciding what gear to purchase can be an overwhelming task. A stroll down the aisles at Bass Pro Shop or the local tackle store will make your head spin with all of the tackle choices available. There are shakey heads, wacky worms, spinner baits, chatter baits, crank baits, jerk baits, drop shots, beavers, and creatures just to name a few. Then there is bait color selection, which is a very in-depth topic itself. Just ask a group of seasoned anglers their favorite color, everything from cotton candy to swamp grass will be mentioned. Adding to the confusion, there are rod, reel, line and weight selections. Where does an angler begin?"

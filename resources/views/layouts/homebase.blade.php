@@ -41,9 +41,9 @@
       modal3.style.display = "none";
     }
 
-    window.onclick =function(event) {
-      if (even.target.className == 'modal-background'){
-        modal3.style.dispaly = "none";
+    window.onclick = function(event) {
+      if (event.target.className == 'modal-background'){
+        modal3.style.display = "none";
       }
     }
     </script>

@@ -44,25 +44,25 @@
       </section>
       <!--End Section-->
     <hr>
-      <!--Start blahblah Section-->
+      <!--Start Tournaments Section-->
       <section class="section">
         <div class="columns">
           <div class="column is-one-fifth">
-            <img class="image is-128x128" src="https://bulma.io/images/placeholders/128x128.png"> 
+            <img class="image is-128x128" title="TI-Enterprise Blue Logo" src="\images\LOGO\True-Image-Logo-V1.png" alt="TI Minimalist Logo"> 
           </div>
           <div column="column">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima fuga excepturi velit, distinctio, sapiente esse quod veniam natus ipsam magni? Maiores porro necessitatibus libero fuga sapiente beatae quasi exercitationem!<br>
-            <a style="float:right" class="button is-link is-small is-outlined" href="/">Temp Button &raquo;</a></p>
+            <p>TI-Enterprise reguraly participates in fishing tourmanets. Keep up to date by visiting our Tournament Schedule here!<br>
+            <a style="float:right" class="button is-link is-small is-outlined" href="#" disabled>Coming Soon!</a></p>
           </div>
         </div>
       </section>
       <!--End Section-->
     <hr>
-      <!--Start blahblah Section-->
+      <!--Start Message from Ray Section Section-->
       <section class="section">
         <div class="columns">
           <div class="column is-one-fifth">
-            <img class="image is-128x128" src="\images\team-members\Caldwell\13-raybigbass.png"> 
+            <img class="image is-128x128" title="Big Ray with a Big Bass" src="\images\team-members\Caldwell\13-raybigbass.png" alt="Ray holding a Big Bass"> 
           </div>
           <div column="column">
               <p>My Name is Ray Caldwell owner of True Image Enterprise. I’m from Longview, Texas and I grew up fishing a lot of different lakes with my dad D.C. Caldwell. We fished lakes like Lake Folk, Lake O’ the pines, Toledo Bend, Sam Raybourn, and Caddo Lake. . .<br>
@@ -104,28 +104,29 @@
         </div>
       </div>
         <!--Row 3-->
-      <!--<div class="columns is-variable is-2 is-mobile">
-        <div class="column">
-          <img class="image is-128x128 team-member-home" title="Melvin Williams" src="https://bulma.io/images/placeholders/128x128.png" alt="melvin-williams.jpg">
-          <p class="name-home">Melvin Williams</p> 
-        </div>
-        <div class="column is-narrow"></div>
-        <div class="column">
-          <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png"> 
-          <p class="name-home">First Name Last Name</p>
-        </div>
-      </div>-->
-    </section>
-    <!--End Section-->
-    <!--Modal 1-->
-    <div id="homeModal3" class="modal">
-      <div class="modal-background"></div>
+        <!--<div class="columns is-variable is-2 is-mobile">
+          <div class="column">
+            <img class="image is-128x128 team-member-home" title="Melvin Williams" src="https://bulma.io/images/placeholders/128x128.png" alt="melvin-williams.jpg">
+            <p class="name-home">Melvin Williams</p> 
+          </div>
+          <div class="column is-narrow"></div>
+          <div class="column">
+            <img class="image is-128x128 team-member-home" src="https://bulma.io/images/placeholders/128x128.png"> 
+            <p class="name-home">First Name Last Name</p>
+          </div>
+        </div>-->
+      </section>
+      <!--End Section-->
+      <!--Modal 3-->
+      <div id="homeModal3" class="modal">
+        <div class="modal-background"></div>
         <div class="modal-card">
           <header class="modal-card-head">
             <h3 class="modal-card-title">Keep it Simple!</h3>
             <button class="delete close" aria-label="close"></button>
           </header>
           <section class="modal-card-body">
+            <img src="\images\1-bassoriginal.jpg" alt="">
             <p>For a beginning bass angler, bass fishing can quickly become expensive and complicated. Deciding what gear to purchase can be an overwhelming task. A stroll down the aisles at Bass Pro Shop or the local tackle store will make your head spin with all of the tackle choices available. There are shakey heads, wacky worms, spinner baits, chatter baits, crank baits, jerk baits, drop shots, beavers, and creatures just to name a few. Then there is bait color selection, which is a very in-depth topic itself. Just ask a group of seasoned anglers their favorite color, everything from cotton candy to swamp grass will be mentioned. Adding to the confusion, there are rod, reel, line and weight selections. Where does an angler begin?</p>
             <br>
             <p>Bass are hard enough to figure out, so keeping gear selection simple will make the learning experience more enjoyable and save money. Here are some basic tips to help get started:</p>
@@ -156,9 +157,10 @@
           <footer class="modal-card-foot">
           </footer>
         </div>
+        
       </div>
+      <!-- End Modal 3-->
     </div>
-    <!-- End Modal 1-->
   </div>
 </template>
 
