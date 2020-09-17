@@ -2215,6 +2215,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Home Component mounted.');
@@ -38435,8 +38459,7 @@ var staticRenderFns = [
             "button",
             {
               staticClass: "button is-link is-small is-outlined",
-              staticStyle: { float: "right" },
-              attrs: { id: "modalBtn" }
+              staticStyle: { float: "right" }
             },
             [_vm._v("Read More")]
           )
@@ -38476,7 +38499,8 @@ var staticRenderFns = [
             "button",
             {
               staticClass: "button is-link is-small is-outlined",
-              staticStyle: { float: "right" }
+              staticStyle: { float: "right" },
+              attrs: { id: "modalBtn3" }
             },
             [_vm._v("Read More")]
           )
@@ -38514,7 +38538,7 @@ var staticRenderFns = [
                         target: "_blank"
                       }
                     },
-                    [_vm._v("Bait Store»")]
+                    [_vm._v("Bait Store »")]
                   )
                 ])
               ])
@@ -38548,7 +38572,7 @@ var staticRenderFns = [
                       staticStyle: { float: "right" },
                       attrs: { href: "/" }
                     },
-                    [_vm._v("Temp Button»")]
+                    [_vm._v("Temp Button »")]
                   )
                 ])
               ])
@@ -38582,7 +38606,7 @@ var staticRenderFns = [
                       staticStyle: { float: "right" },
                       attrs: { href: "/ray-caldwell" }
                     },
-                    [_vm._v("Read On»")]
+                    [_vm._v("Read On »")]
                   )
                 ])
               ])
@@ -38604,15 +38628,17 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("hr"),
           _vm._v(" "),
-          _c("img", {
-            staticClass: "image is-square team-member-home",
-            staticStyle: { "padding-top": "0rem" },
-            attrs: {
-              title: "Team Photo",
-              src: "\\images\\True-Image-Team.jpg",
-              alt: "True-Image-Team.jpg"
-            }
-          }),
+          _c("a", { attrs: { href: "/about" } }, [
+            _c("img", {
+              staticClass: "image is-square team-member-home",
+              staticStyle: { "padding-top": "0rem" },
+              attrs: {
+                title: "Team Photo",
+                src: "\\images\\True-Image-Team.jpg",
+                alt: "True-Image-Team.jpg"
+              }
+            })
+          ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -38654,7 +38680,7 @@ var staticRenderFns = [
                 staticClass: "image is-128x128 team-member-home",
                 attrs: {
                   title: "Brian Nunn",
-                  src: "\\images\\team-members\\brian-nunn.jpg",
+                  src: "\\images\\team-members\\brian-nunn2.jpg",
                   alt: "brian-nunn.jpg"
                 }
               }),
@@ -38679,30 +38705,122 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "modal", attrs: { id: "homeModal" } }, [
+        _c("div", { staticClass: "modal", attrs: { id: "homeModal3" } }, [
           _c("div", { staticClass: "modal-background" }),
           _vm._v(" "),
           _c("div", { staticClass: "modal-card" }, [
             _c("header", { staticClass: "modal-card-head" }, [
-              _c("p", { staticClass: "modal-card-title" }, [
-                _vm._v("Modal title")
+              _c("h3", { staticClass: "modal-card-title" }, [
+                _vm._v("Keep it Simple!")
               ]),
               _vm._v(" "),
               _c("button", {
-                staticClass: "delete",
+                staticClass: "delete close",
                 attrs: { "aria-label": "close" }
               })
             ]),
             _vm._v(" "),
-            _c("section", { staticClass: "modal-card-body" }),
-            _vm._v(" "),
-            _c("footer", { staticClass: "modal-card-foot" }, [
-              _c("button", { staticClass: "button is-success" }, [
-                _vm._v("Save changes")
+            _c("section", { staticClass: "modal-card-body" }, [
+              _c("p", [
+                _vm._v(
+                  "For a beginning bass angler, bass fishing can quickly become expensive and complicated. Deciding what gear to purchase can be an overwhelming task. A stroll down the aisles at Bass Pro Shop or the local tackle store will make your head spin with all of the tackle choices available. There are shakey heads, wacky worms, spinner baits, chatter baits, crank baits, jerk baits, drop shots, beavers, and creatures just to name a few. Then there is bait color selection, which is a very in-depth topic itself. Just ask a group of seasoned anglers their favorite color, everything from cotton candy to swamp grass will be mentioned. Adding to the confusion, there are rod, reel, line and weight selections. Where does an angler begin?"
+                )
               ]),
               _vm._v(" "),
-              _c("button", { staticClass: "button" }, [_vm._v("Cancel")])
-            ])
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Bass are hard enough to figure out, so keeping gear selection simple will make the learning experience more enjoyable and save money. Here are some basic tips to help get started:"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Rod Selection:")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "While there are many different technique specific rods on the market, almost everything can be done with a 6 ½ - 7-foot medium heavy rod. For casting at close range targets with a square bill crankbait or a spinnerbait, a 6 ½ foot rod is a great tool. For flipping/pitching or longer casting situations, a 7-footer is a better option. There are times, like punching and deep cranking, when a technique specific rods is more effective. However, 90 percent of the bass catching techniques can be done with a rod mentioned above."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Reel Selection:")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Reel selection can also be complicated, but most applications can be handled with a middle of the road gear ratio like a 6.4:1. By staying in the middle, it is easier to speed up the retrieve if a faster presentation is needed or slow it down if it needs to be fished slower. It’s more difficult to fish slowly with a 7:1 gear ratio or fast with a 5:1 gear ratio. Faster reels definitely have their place, like when needing to reel up a bunch of line to get a bass out of cover quickly. Slower reels are better for deeper cranking situations. A 6.4:1 is a great reel gear ratio for beginning anglers who need a tool to do it all."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Line Selection:")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Line can be a complex topic. There is braid, fluorocarbon, monofilament and a few other types. Line size also needs to be considered for different situations. But this article is for beginners and about keeping it simple, so let’s focus on simplicity."
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "If looking to buy only one type and size of line, 17-pound monofilament is versatile and will handle almost every application. It’s tough and can handle pulling bass from most cover, but also small enough to cast lighter baits like square bill cranks. It can also be used for spinnerbaits, top waters and most soft plastics. Fluorocarbon line is an excellent upgrade for an advanced presentation. Fluorocarbon is very sensitive and can detect the subtlest of bites, and its low stretch characteristics allow for optimum hook penetration on the hook set."
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "One situation the lines mentioned above will not cover is fishing heavy vegetation like thick grass or lily pads. When throwing frogs around lily pads or grass, 50-65 pound braid is a must. Frogs can be thrown on monofilament but there is a likely chance the fish will be lost when they bury themselves in the pads."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Weight Selection:")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Spend the extra money and buy tungsten versus lead weights. Tungsten has several advantages and going cheap in this situation is a big disadvantage. Tungsten weights are smaller than lead, which helps make the presentation smaller and will allow for better hook sets. Tungsten is very dense and helps to transmit vibration through the line, to the rod handle. The increased transmitted vibration enables better bite detection, and determining bottom composition—wood rock, sand, etc. If there is no vegetation, a ¼ ounce weight is a great choice. When fishing around brush or light vegetation, or needing a faster fall, use 5/16th ounce. Beginning anglers can do almost everything with those two weight sizes."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Bait Color Selection:")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "The key to bait color selection is visibility and natural appearance. The rule of thumb is to use lighter colors in clearer water and darker colors in stained water. Lighter colors appear more natural when the water is clear and darker colors are more visible in stained water."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "In most situations, only three colors of Soft Plastics will be need. If the water is clear and the skies are blue, Purple Dust is a great choice. If it’s cloudy or the water is semi-stained Amber Green is hard to beat. If the water is stained to muddy, black and blue is outstanding. If only one color is available, buy Amber Green. It’s very versatile and natural because most prey in the water appear as a hue of green. Yes, there are many other colors out there, and several of them are great, but these three basic colors can be very effective, especially when learning and trying to keep it simple."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "When it comes to crankbaits, if the water is clearer go with silver colors to match the shad. If the water is more stained go with brighter colors like chartreuse or fire tiger so the bait is more visible to the fish. For spinnerbaits a white and chartreuse skirt will cover most situations."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [
+                _c("i", [_vm._v("See you on the water. Get A Limit!")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("footer", { staticClass: "modal-card-foot" })
           ])
         ])
       ])

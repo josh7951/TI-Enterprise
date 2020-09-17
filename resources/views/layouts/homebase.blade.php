@@ -27,19 +27,23 @@
     <script>
     console.log("Modal Testing");
     // Get Modal
-    var modal = document.getElementById("homeModal");
+    var modal3 = document.getElementById("homeModal3");
     // Get button
-    var btn = document.getElementById("modalBtn");
+    var btn3 = document.getElementById("modalBtn3");
 
     var close = document.getElementsByClassName("close")[0];
 
-    btn.onclick = function () {
-      modal.style.display = "block";
+    btn3.onclick = function () {
+      modal3.style.display = "block";
     }
 
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+    close.onclick = function() {
+      modal3.style.display = "none";
+    }
+
+    window.onclick =function(event) {
+      if (even.target.className == 'modal-background'){
+        modal3.style.dispaly = "none";
       }
     }
     </script>
