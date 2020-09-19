@@ -38430,10 +38430,6 @@ var staticRenderFns = [
                     attrs: { placeholder: "Your message here . . . " }
                   })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "button is-info" }, [
-                _vm._v("Send Message")
               ])
             ]
           )
