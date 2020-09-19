@@ -47,7 +47,7 @@
             <textarea class="textarea" placeholder="Your message here . . . "></textarea>
           </div>
         </div>
-        <button class="button is-info">Send Message</button>
+        <!--<button class="button is-info">Send Message</button>-->
       </form>
     </div>
   </div>
