@@ -2025,6 +2025,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2075,6 +2077,82 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38311,7 +38389,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "column is-two-fifths" }, [
           _c(
             "form",
-            { staticClass: "form", attrs: { action: "", method: "POST" } },
+            { staticClass: "form", attrs: { action: "", method: "post" } },
             [
               _c("div", { staticClass: "field" }, [
                 _c("label", { staticClass: "label" }, [_vm._v("Name")]),
@@ -38352,11 +38430,17 @@ var staticRenderFns = [
                     attrs: { placeholder: "Your message here . . . " }
                   })
                 ])
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "button is-info" }, [
+                _vm._v("Send Message")
               ])
             ]
           )
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _c("br")
     ])
   }
 ]
@@ -38461,14 +38545,19 @@ var staticRenderFns = [
             "button",
             {
               staticClass: "button is-link is-small is-outlined",
-              staticStyle: { float: "right" }
+              staticStyle: { float: "right" },
+              attrs: { id: "modalBtn1" }
             },
             [_vm._v("Read More")]
           )
         ]),
         _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
         _c("div", { staticClass: "column" }, [
-          _c("img", { attrs: { src: "\\images\\test.jpg", alt: "" } }),
+          _c("img", {
+            attrs: { src: "\\images\\wesley-burnett.jpg", alt: "" }
+          }),
           _vm._v(" "),
           _c("p", [
             _vm._v(
@@ -38480,11 +38569,14 @@ var staticRenderFns = [
             "button",
             {
               staticClass: "button is-link is-small is-outlined",
-              staticStyle: { float: "right" }
+              staticStyle: { float: "right" },
+              attrs: { id: "modalBtn2" }
             },
             [_vm._v("Read More")]
           )
         ]),
+        _vm._v(" "),
+        _c("br"),
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
           _c("img", {
@@ -38506,7 +38598,9 @@ var staticRenderFns = [
             },
             [_vm._v("Read More")]
           )
-        ])
+        ]),
+        _vm._v(" "),
+        _c("br")
       ]),
       _vm._v(" "),
       _c("hr"),
@@ -38711,6 +38805,206 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
+        _c("div", { staticClass: "modal", attrs: { id: "homeModal1" } }, [
+          _c("div", { staticClass: "modal-background" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-card" }, [
+            _c("header", { staticClass: "modal-card-head" }, [
+              _c("h3", { staticClass: "modal-card-title" }, [
+                _vm._v("Finding Your Secret Spot")
+              ]),
+              _vm._v(" "),
+              _c("button", {
+                staticClass: "delete close",
+                attrs: { "aria-label": "close" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("section", { staticClass: "modal-card-body" }, [
+              _c("img", {
+                attrs: { src: "\\images\\bass-fishing.jpg", alt: "" }
+              }),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Every bass fisherman dream of finding a secret spot that is loaded with bass and sees very little pressure. Many of these spots are on public lands and are easily accessible by anglers that are willing to put in a little work. Follow these easy steps and you are on your way to finding your own secret spot!"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Find Available Public Lands:")]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "There are lots of opportunities for discovering public lands with fishing hot spots. Conducting a little internet research will help. I will categorize public lands in three different groups and discuss options for researching and finding fishing opportunities for each."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("City & County Lands:")]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Many city and county parks have undeveloped lands or wooded areas that contain ponds, rock pits or wetlands that hold bass. Try looking at city and county parks and recreation web sites. As an example, there is a county park located less than 2 miles from my house. This park is visited by hundreds of people each week who enjoy playing sports on the various baseball and soccer fields in the park. An internet search, through a mapping web site, revealed a hidden swampy looking wetland area located in an undeveloped portion of the park. Fishing is incredible! I often go back when I need a quick bass fishing “fix”."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [
+                _vm._v(
+                  "State Lands (Hunting Lands, State Parks, State Forests, Water Management Lands):"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Many state lands are open to the public. Although fishing is allowed on many of these lands, anglers are usually not the primary user group. On hunting lands, fishing is normally allowed but access may be restricted to certain days. Searching through your state’s Fish & Wildlife Agency web site will help you identify potential properties that can be fished. On other state lands, non-consumptive uses such as hiking, biking, bird watching and horseback riding are usually the most popular forms of recreation. Doing an internet search of the state agency web sites responsible for state forests, state parks and water management district lands will lead you to productive fisheries in your area. As an example, I located a remote rock pit in a state park that is a good mile walk or bike ride from the nearest road. The 5 acre lake is a Crankbait and Worm fisherman’s dream and worth every bit of effort to get there!"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [
+                _vm._v(
+                  "Federal Lands (National Wildlife Refuges and National Parks):"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Many federal lands offer great bass fishing. A thorough internet search through the United States Fish and Wildlife Service or National Park Service websites will reveal properties in your area that have bass fishing potential. As an example, one of the busiest National Wildlife Refuges in my state has several isolated ponds that are off the beaten path. These ponds offer incredible fishing!"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Map It!")]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "After you find potential public lands, the next step is to thoroughly inspect a map of each property. My favorite way is to use mapping web sites such as Bing Maps and Google Earth. Click on the Satellite or Earth feature to locate water bodies on each property. You can really zoom in to study each area in detail and determine the best and shortest path to and from each body of water. I like to use both Google Earth and Bing to compare the body of water from different aerial photos."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Check Your Regulations:")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "This is a must. Pay special attention to area specific licensing requirements, days/hours of use, parking/driving restrictions and fishing regulations. By knowing up front what you need to do will often lead to a more enjoyable day. As an example, many National Wildlife Refuges require a no cost Refuge Fishing Permit. This requires the angler to read over and agree to abide by the refuge regulations before signing the permit."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("strong", [_vm._v("Go Fishing!")]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "After you have located your spot and read over the regulations, it’s time to go test out your new spot! A good rule of thumb is to keep your bait selection simple for the first visit. When going to a new spot, sight unseen, I like to bring a medium light spinning rod with 8 lb. fluorocarbon and a small selection of True Image finesse worms. This set up will catch just about anything, large or small. I keep my color selection to light colors such as Blue Flash or 4NS for clear water and darker colors such as Amber Blue or June Bug for darker waters. Once I get familiar with the lake, I will tailor my tackle according to the terrain and vegetation. Don’t be afraid to “Go Big” and upsize your tackle after learning the particulars of your spot! Giant bass will often thrive in little waters!"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Doing a little homework and putting in a little effort can be very rewarding when trying to find a secret fishing spot. There is nothing like the excitement of taking that first cast into waters unknown. Join the excitement and take steps to find your own secret spot. You’ll be glad that you did!"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("footer", { staticClass: "modal-card-foot" }, [
+              _c(
+                "button",
+                { staticClass: "button is-success is-outlined close" },
+                [_vm._v("Close")]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal", attrs: { id: "homeModal2" } }, [
+          _c("div", { staticClass: "modal-background" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-card" }, [
+            _c("header", { staticClass: "modal-card-head" }, [
+              _c("h3", { staticClass: "modal-card-title" }, [
+                _vm._v("What Makes a Pro Bass Fisherman?")
+              ]),
+              _vm._v(" "),
+              _c("button", {
+                staticClass: "delete close",
+                attrs: { "aria-label": "close" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("section", { staticClass: "modal-card-body" }, [
+              _c("img", {
+                attrs: { src: "\\images\\wesley-burnett.jpg", alt: "" }
+              }),
+              _vm._v(" "),
+              _c("strong", [
+                _vm._v("Up through the ranks Become a bass professional")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  'Wesley Burnett is an example of careful planning for progress as a tournament bass angler. Burnett started fishing, as many of us did, as a child. He grew up on a river known for catfish. On one of a series of family vacations, while Burnett was wading in the river, his grandmother said, "He\'s going to be a fisherman when he grows up." Burnett joined a bass-fishing club when he was 12 years old. As he read about bass fishing, his heroes became those anglers whose profiles appeared in magazines and newspapers.'
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "After experience in regional tournaments, Burnett entered the EverStart Series as a co-angler. His expectation was that he would be able to fish from the rear of the boat and absorb lessons from more experienced anglers and maybe earn some money at the same time. When he won the EverStart Challenge from the back of the boat it was clear that his plan was working."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "From there, Burnett fished the Wal-Mart FLW Tour and won Co-angler of the Year. Then Burnett switched to the Pro Division of the FLW Tour and the EverStart Series as well, claiming the EverStart Series Central Division points championship."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("His systematic strategy has paid off handsomely.")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("footer", { staticClass: "modal-card-foot" }, [
+              _c(
+                "button",
+                { staticClass: "button is-success is-outlined close" },
+                [_vm._v("Close")]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
         _c("div", { staticClass: "modal", attrs: { id: "homeModal3" } }, [
           _c("div", { staticClass: "modal-background" }),
           _vm._v(" "),
@@ -38830,7 +39124,13 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("footer", { staticClass: "modal-card-foot" })
+            _c("footer", { staticClass: "modal-card-foot" }, [
+              _c(
+                "button",
+                { staticClass: "button is-success is-outlined close" },
+                [_vm._v("Close")]
+              )
+            ])
           ])
         ])
       ])

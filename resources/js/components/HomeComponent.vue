@@ -13,18 +13,21 @@
       <div class="column">
         <img src="\images\bass-fishing.jpg" alt="">
         <p>Every Bass Fisherman dreams of finding a secret spot that is loaded with bass . . .</p>
-        <button style="float:right" class="button is-link is-small is-outlined">Read More</button>
+        <button style="float:right" id="modalBtn1" class="button is-link is-small is-outlined">Read More</button>
       </div>
+      <br>
       <div class="column">
-        <img src="\images\test.jpg" alt="">
+        <img src="\images\wesley-burnett.jpg" alt="">
         <p>Wesley Burnett is a prime example of careful planning for progress . . .</p>
-        <button style="float:right" class="button is-link is-small is-outlined">Read More</button>
+        <button style="float:right" id="modalBtn2" class="button is-link is-small is-outlined">Read More</button>
       </div>
+      <br>
       <div class="column">
         <img src="\images\1-bassoriginal.jpg" alt="">
         <p>For a beginning bass angler, bass fishing can quickly become expensive . . .</p>
         <button style="float:right" id="modalBtn3" class="button is-link is-small is-outlined">Read More</button>
       </div>
+      <br>
     </div>
     <hr>
   <div class="columns">
@@ -117,6 +120,79 @@
         </div>-->
       </section>
       <!--End Section-->
+      <!--Modal 1-->
+      <div id="homeModal1" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <h3 class="modal-card-title">Finding Your Secret Spot</h3>
+            <button class="delete close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <img src="\images\bass-fishing.jpg" alt="">
+            <p>Every bass fisherman dream of finding a secret spot that is loaded with bass and sees very little pressure. Many of these spots are on public lands and are easily accessible by anglers that are willing to put in a little work. Follow these easy steps and you are on your way to finding your own secret spot!</p>
+            <br>
+            <strong>Find Available Public Lands:</strong>
+            <br>
+            <p>There are lots of opportunities for discovering public lands with fishing hot spots. Conducting a little internet research will help. I will categorize public lands in three different groups and discuss options for researching and finding fishing opportunities for each.</p>
+            <br>
+            <strong>City &amp; County Lands:</strong>
+            <br>
+            <p>Many city and county parks have undeveloped lands or wooded areas that contain ponds, rock pits or wetlands that hold bass. Try looking at city and county parks and recreation web sites. As an example, there is a county park located less than 2 miles from my house. This park is visited by hundreds of people each week who enjoy playing sports on the various baseball and soccer fields in the park. An internet search, through a mapping web site, revealed a hidden swampy looking wetland area located in an undeveloped portion of the park. Fishing is incredible! I often go back when I need a quick bass fishing “fix”.</p>
+            <br>
+            <strong>State Lands (Hunting Lands, State Parks, State Forests, Water Management Lands):</strong>
+            <br>
+            <p>Many state lands are open to the public. Although fishing is allowed on many of these lands, anglers are usually not the primary user group. On hunting lands, fishing is normally allowed but access may be restricted to certain days. Searching through your state’s Fish &amp; Wildlife Agency web site will help you identify potential properties that can be fished. On other state lands, non-consumptive uses such as hiking, biking, bird watching and horseback riding are usually the most popular forms of recreation. Doing an internet search of the state agency web sites responsible for state forests, state parks and water management district lands will lead you to productive fisheries in your area. As an example, I located a remote rock pit in a state park that is a good mile walk or bike ride from the nearest road. The 5 acre lake is a Crankbait and Worm fisherman’s dream and worth every bit of effort to get there!</p>
+            <br>
+            <strong>Federal Lands (National Wildlife Refuges and National Parks):</strong>
+            <br>
+            <p>Many federal lands offer great bass fishing. A thorough internet search through the United States Fish and Wildlife Service or National Park Service websites will reveal properties in your area that have bass fishing potential. As an example, one of the busiest National Wildlife Refuges in my state has several isolated ponds that are off the beaten path. These ponds offer incredible fishing!</p>
+            <br>
+            <strong>Map It!</strong>
+            <br>
+            <p>After you find potential public lands, the next step is to thoroughly inspect a map of each property. My favorite way is to use mapping web sites such as Bing Maps and Google Earth. Click on the Satellite or Earth feature to locate water bodies on each property. You can really zoom in to study each area in detail and determine the best and shortest path to and from each body of water. I like to use both Google Earth and Bing to compare the body of water from different aerial photos.</p>
+            <br>
+            <strong>Check Your Regulations:</strong>
+            <p>This is a must. Pay special attention to area specific licensing requirements, days/hours of use, parking/driving restrictions and fishing regulations. By knowing up front what you need to do will often lead to a more enjoyable day. As an example, many National Wildlife Refuges require a no cost Refuge Fishing Permit. This requires the angler to read over and agree to abide by the refuge regulations before signing the permit.</p>
+            <br>
+            <strong>Go Fishing!</strong>
+            <br>
+            <p>After you have located your spot and read over the regulations, it’s time to go test out your new spot! A good rule of thumb is to keep your bait selection simple for the first visit. When going to a new spot, sight unseen, I like to bring a medium light spinning rod with 8 lb. fluorocarbon and a small selection of True Image finesse worms. This set up will catch just about anything, large or small. I keep my color selection to light colors such as Blue Flash or 4NS for clear water and darker colors such as Amber Blue or June Bug for darker waters. Once I get familiar with the lake, I will tailor my tackle according to the terrain and vegetation. Don’t be afraid to “Go Big” and upsize your tackle after learning the particulars of your spot! Giant bass will often thrive in little waters!</p>
+            <br>
+            <p>Doing a little homework and putting in a little effort can be very rewarding when trying to find a secret fishing spot. There is nothing like the excitement of taking that first cast into waters unknown. Join the excitement and take steps to find your own secret spot. You’ll be glad that you did!</p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success is-outlined close">Close</button>
+          </footer>
+        </div>
+      </div>
+      <!-- End Modal 1-->
+      <!--Modal 2-->
+      <div id="homeModal2" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <h3 class="modal-card-title">What Makes a Pro Bass Fisherman?</h3>
+            <button class="delete close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <img src="\images\wesley-burnett.jpg" alt="">
+            <strong>Up through the ranks Become a bass professional</strong>
+            <br>
+            <p>Wesley Burnett is an example of careful planning for progress as a tournament bass angler. Burnett started fishing, as many of us did, as a child. He grew up on a river known for catfish. On one of a series of family vacations, while Burnett was wading in the river, his grandmother said, "He's going to be a fisherman when he grows up." Burnett joined a bass-fishing club when he was 12 years old. As he read about bass fishing, his heroes became those anglers whose profiles appeared in magazines and newspapers.</p>
+            <br>
+            <p>After experience in regional tournaments, Burnett entered the EverStart Series as a co-angler. His expectation was that he would be able to fish from the rear of the boat and absorb lessons from more experienced anglers and maybe earn some money at the same time. When he won the EverStart Challenge from the back of the boat it was clear that his plan was working.</p>
+            <br>
+            <p>From there, Burnett fished the Wal-Mart FLW Tour and won Co-angler of the Year. Then Burnett switched to the Pro Division of the FLW Tour and the EverStart Series as well, claiming the EverStart Series Central Division points championship.</p>
+            <br>
+            <p>His systematic strategy has paid off handsomely.</p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success is-outlined close">Close</button>
+          </footer>
+        </div>
+      </div>
+      <!-- End Modal 2-->
       <!--Modal 3-->
       <div id="homeModal3" class="modal">
         <div class="modal-background"></div>
@@ -155,9 +231,9 @@
             <strong><i>See you on the water. Get A Limit!</i></strong>
           </section>
           <footer class="modal-card-foot">
+            <button class="button is-success is-outlined close">Close</button>
           </footer>
         </div>
-        
       </div>
       <!-- End Modal 3-->
     </div>

@@ -21,7 +21,7 @@
     </div>
     <!--right column-->
     <div class="column is-two-fifths">
-      <form action="" method="POST" class="form">
+      <form action="" method="post" class="form">
         <!--Start Contact Form-->
         <!--Name Field-->
         <div class="field">
@@ -47,9 +47,11 @@
             <textarea class="textarea" placeholder="Your message here . . . "></textarea>
           </div>
         </div>
+        <button class="button is-info">Send Message</button>
       </form>
     </div>
   </div>
+  <br>
 </div>
 </template>
 
