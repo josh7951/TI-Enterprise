@@ -54,7 +54,7 @@
             <img class="image is-128x128" title="TI-Enterprise Blue Logo" src="\images\LOGO\True-Image-Logo-V1.png" alt="TI Minimalist Logo"> 
           </div>
           <div column="column">
-            <p>TI-Enterprise reguraly participates in fishing tourmanets. Keep up to date by visiting our Tournament Schedule here!<br>
+            <p>TI-Enterprise regularly participates in fishing tournaments. Keep up to date by visiting our Tournament Schedule here!<br>
             <a style="float:right" class="button is-link is-small is-outlined" href="#" disabled>Coming Soon!</a></p>
           </div>
         </div>
