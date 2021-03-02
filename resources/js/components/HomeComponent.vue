@@ -1,10 +1,21 @@
 <template>
   <div>
    <!--Begin Hero Section--> 
-    <section class="hero is-light">
-      <div class="hero-body">
-        <div class="container">
-          <img src="\images\carousel\true-img.png" style="width:100%">
+    <section class="hero">
+      <div class="box has-text-centered" style="background-color:#303030!important;border-radius:0.5rem;box-shadow: 5px 10px 18px;">
+        <div class="glider-contain">
+          <br>
+          <div class="glider">         
+            <figure style="background-color:#303030!important;"><img src="\images\carousel\true-img.png"/></figure>
+            <figure style="background-color:#303030!important;"><img style="border-radius:.5rem;" src="\images\carousel\slide1.jpg"/></figure>
+          </div>
+          <button aria-label="Previous" class="glider-prev">
+              <i class="fa fa-chevron-left"></i>
+          </button>
+          <button aria-label="Next" class="glider-next">
+              <i class="fa fa-chevron-right"></i>
+          </button>
+          <div role="tablist" id="dots"></div>
         </div>
       </div>
     </section>
