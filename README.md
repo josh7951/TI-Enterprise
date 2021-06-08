@@ -3,7 +3,7 @@
 <br>
 
 # Table of Contents
-- [About](#About TI-Enterprise)
+- [About](#About)
 - [Installation](#Installation)
 - [Frameworks](#Frameworks)
 - [License](#License)
