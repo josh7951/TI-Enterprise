@@ -1,5 +1,7 @@
-<p align="center"><img src="www.ti-enterprise.com/images/carousel/true-img.png" width="400"></p>
+<p align="center"><img src="http://ti-enterprise.com/images/carousel/true-img.png" width="400"></p>
+
 <br>
+
 # Table of Contents
 - [About](#About TI-Enterprise)
 - [Installation](#Installation)
