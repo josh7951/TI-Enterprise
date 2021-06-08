@@ -3,12 +3,12 @@
 <br>
 
 # Table of Contents
-- [About](#About_TI-Enterprise)
+- [About](#About)
 - [Installation](#Installation)
 - [Frameworks](#Frameworks)
 - [License](#License)
 
-## About TI-Enterprise
+## About
 TI(True Image)-Enterprise is a Competitive Fishing Team and Fishing Bait Vendor under the same name located in Southern California
 
 ## Installation
