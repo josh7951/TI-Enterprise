@@ -6,7 +6,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+window.Vue = require('vue').default;
 
 /**
  * The following block of code may be used to automatically register your
@@ -26,6 +26,7 @@ Vue.component('store-content', require('./components/StoreComponent.vue').defaul
 Vue.component('contact-content', require('./components/Contact.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
 Vue.component('caldwell-content', require('./components/CaldwellComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -35,6 +36,3 @@ Vue.component('caldwell-content', require('./components/CaldwellComponent.vue').
 const app = new Vue({
     el: '#app',
 });
-
-
-

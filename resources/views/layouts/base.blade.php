@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TI-Enterprise</title>
-    <link rel="stylesheet" href="\bulma\css\bulma.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="\css\glider.css">
   </head>
   <body>
@@ -28,5 +28,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="\js\app.js"></script>
     <script src="\js\glider.min.js"></script>
+    <script src="\js\home.js"></script>
   </body>
 </html>

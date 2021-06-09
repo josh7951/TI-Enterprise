@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +15,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('landingpage');
 });
 
 Route::get('/about', function() {
@@ -34,3 +37,7 @@ Route::get('/contact', function() {
 Route::get('/ray-caldwell', function() {
     return view('caldwell');
 });
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
