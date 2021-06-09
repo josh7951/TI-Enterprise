@@ -17,6 +17,7 @@ TI(True Image)-Enterprise is a Competitive Fishing Team and Fishing Bait Vendor 
 3. Make a copy of `.env.example` and rename it to `.env`
 4. Fill out `.env` with correct information
 5. Start up your SQL server
+    - Create a Database in your SQL Server named `true_image_DB`
 6. Run Setup Commands:
     ```properties
     $ php artisan key:generate
