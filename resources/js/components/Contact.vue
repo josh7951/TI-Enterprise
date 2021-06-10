@@ -22,6 +22,7 @@
     <!--right column-->
     <div class="column is-two-fifths">
       <form action="" method="post" class="form">
+        <input type="hidden" name="_token" v-bind:value="csrf">
         <!--Start Contact Form-->
         <!--Name Field-->
         <div class="field">
@@ -59,6 +60,11 @@
   export default {
     mounted() {
       console.log('Component mounted.')
+    },
+    data() {
+      return {
+        csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+      }
     }
   }
 </script>
