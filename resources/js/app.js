@@ -25,6 +25,8 @@ Vue.component('team-content', require('./components/TeamComponent.vue').default)
 Vue.component('store-content', require('./components/StoreComponent.vue').default);
 Vue.component('contact-content', require('./components/Contact.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('dashbar', require('./components/NavbarDash.vue').default);
+Vue.component('aside-menu', require('./components/AsideMenu.vue').default);
 Vue.component('caldwell-content', require('./components/CaldwellComponent.vue').default);
 
 /**
