@@ -7,10 +7,10 @@
     <title>TI-Enterprise</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="\css\glider.css">
+    <link rel="icon" href="\images\LOGO\True-Image-Logo-V1.png">
   </head>
   <body>
-
-
+  
       <div id="app">
         <navbar></navbar>
         <div class="container">

@@ -38903,9 +38903,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("a", { staticClass: "name", attrs: { href: "#profile" } }, [
-        _vm._v("Profile "),
-        _c("i", { staticClass: "fas fa-user" })
+      _c("a", { staticClass: "name", attrs: { href: "#tournament" } }, [
+        _vm._v("Tournament Schedule "),
+        _c("i", { staticClass: "far fa-calendar-alt" })
       ])
     ])
   },

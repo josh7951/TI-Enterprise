@@ -7,7 +7,7 @@
             General
           </p>
           <li><a class="name" href="#dashboard">Dashboard <i class="far fa-chart-bar"></i></a></li>
-          <li><a class="name" href="#profile">Profile&nbsp;<i class="fas fa-user"></i></a></li>
+          <li><a class="name" href="#tournament">Tournament Schedule&nbsp;<i class="far fa-calendar-alt"></i></a></li>
           <li><a class="name" href="#settings">Settings&nbsp;<i class="fas fa-cog"></i></a></li>
           <li>
             <a :href="route" style="color:red;"
