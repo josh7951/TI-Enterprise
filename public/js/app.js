@@ -2053,9 +2053,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
+  },
+  data: function data() {
+    return {
+      csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+    };
   }
 });
 
@@ -2698,14 +2704,18 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js"
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue").default);
+/** Components used on brochure site */
+
 Vue.component('home-content', __webpack_require__(/*! ./components/HomeComponent.vue */ "./resources/js/components/HomeComponent.vue").default);
 Vue.component('team-content', __webpack_require__(/*! ./components/TeamComponent.vue */ "./resources/js/components/TeamComponent.vue").default);
 Vue.component('store-content', __webpack_require__(/*! ./components/StoreComponent.vue */ "./resources/js/components/StoreComponent.vue").default);
 Vue.component('contact-content', __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue").default);
+Vue.component('caldwell-content', __webpack_require__(/*! ./components/CaldwellComponent.vue */ "./resources/js/components/CaldwellComponent.vue").default);
 Vue.component('navbar', __webpack_require__(/*! ./components/Navbar.vue */ "./resources/js/components/Navbar.vue").default);
+/** Components for admin panel */
+
 Vue.component('dashbar', __webpack_require__(/*! ./components/NavbarDash.vue */ "./resources/js/components/NavbarDash.vue").default);
 Vue.component('aside-menu', __webpack_require__(/*! ./components/AsideMenu.vue */ "./resources/js/components/AsideMenu.vue").default);
-Vue.component('caldwell-content', __webpack_require__(/*! ./components/CaldwellComponent.vue */ "./resources/js/components/CaldwellComponent.vue").default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -39175,137 +39185,161 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "columns" }, [
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "column is-two-fifths" }, [
+        _c(
+          "form",
+          { staticClass: "form", attrs: { action: "", method: "post" } },
+          [
+            _c("input", {
+              attrs: { type: "hidden", name: "_token" },
+              domProps: { value: _vm.csrf }
+            }),
+            _vm._v(" "),
+            _vm._m(2),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _vm._m(4)
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "nav",
-        { staticClass: "breadcrumb", attrs: { "aria-label": "breadcrumbs" } },
-        [
-          _c("ul", [
-            _c("li", [_c("a", { attrs: { href: "/" } }, [_vm._v("Home")])]),
-            _vm._v(" "),
-            _c("li", { staticClass: "is-active" }, [
-              _c("a", { attrs: { href: "#", "aria-current": "page" } }, [
-                _vm._v("Contact Us")
-              ])
+    return _c(
+      "nav",
+      { staticClass: "breadcrumb", attrs: { "aria-label": "breadcrumbs" } },
+      [
+        _c("ul", [
+          _c("li", [_c("a", { attrs: { href: "/" } }, [_vm._v("Home")])]),
+          _vm._v(" "),
+          _c("li", { staticClass: "is-active" }, [
+            _c("a", { attrs: { href: "#", "aria-current": "page" } }, [
+              _vm._v("Contact Us")
             ])
           ])
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column is-half" }, [
-          _c("h1", { staticClass: "title is-1" }, [
-            _vm._v(" True Image Enterprise")
-          ]),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Interested in joining our team? Send us an email or give us a call! We look forward to working with you! For all order inquiries, please email us at "
-            ),
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "mailto:orders@ti-enterprises.com?Subject=Order%20Inquiry",
-                  target: "_top"
-                }
-              },
-              [_vm._v("orders@ti-enterprises.com")]
-            ),
-            _vm._v(".")
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("209 W Ridgecrest Blvd. Suite 132"),
-            _c("br"),
-            _vm._v("Ridgecrest, California 93555")
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href:
-                    "mailto:ray@ti-enterprises.com?Subject=TI-Enterprise%20Inquiry",
-                  target: "_top"
-                }
-              },
-              [_vm._v("ray@ti-enterprise.com")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("a", { attrs: { href: "tel:+1-760-382-1022" } }, [
-              _vm._v("(760)382-1022")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column is-two-fifths" }, [
-          _c(
-            "form",
-            { staticClass: "form", attrs: { action: "", method: "post" } },
-            [
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Name")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "text", placeholder: "Your Name" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Email")]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "control has-icons-left has-icons-right" },
-                  [
-                    _c("input", {
-                      staticClass: "input",
-                      attrs: { type: "email", placeholder: "hello@example.com" }
-                    }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "icon is-small is-left" }, [
-                      _c("i", { staticClass: "fas fa-envelope" })
-                    ])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Message")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("textarea", {
-                    staticClass: "textarea",
-                    attrs: { placeholder: "Your message here . . . " }
-                  })
-                ])
-              ])
-            ]
-          )
         ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column is-half" }, [
+      _c("h1", { staticClass: "title is-1" }, [
+        _vm._v(" True Image Enterprise")
       ]),
       _vm._v(" "),
-      _c("br")
+      _c("hr"),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Interested in joining our team? Send us an email or give us a call! We look forward to working with you! For all order inquiries, please email us at "
+        ),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "mailto:orders@ti-enterprises.com?Subject=Order%20Inquiry",
+              target: "_top"
+            }
+          },
+          [_vm._v("orders@ti-enterprises.com")]
+        ),
+        _vm._v(".")
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("209 W Ridgecrest Blvd. Suite 132"),
+        _c("br"),
+        _vm._v("Ridgecrest, California 93555")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c(
+          "a",
+          {
+            attrs: {
+              href:
+                "mailto:ray@ti-enterprises.com?Subject=TI-Enterprise%20Inquiry",
+              target: "_top"
+            }
+          },
+          [_vm._v("ray@ti-enterprise.com")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _c("a", { attrs: { href: "tel:+1-760-382-1022" } }, [
+          _vm._v("(760)382-1022")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Name")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          staticClass: "input",
+          attrs: { type: "text", placeholder: "Your Name" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Email")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control has-icons-left has-icons-right" }, [
+        _c("input", {
+          staticClass: "input",
+          attrs: { type: "email", placeholder: "hello@example.com" }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "icon is-small is-left" }, [
+          _c("i", { staticClass: "fas fa-envelope" })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Message")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("textarea", {
+          staticClass: "textarea",
+          attrs: { placeholder: "Your message here . . . " }
+        })
+      ])
     ])
   }
 ]
