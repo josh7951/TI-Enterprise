@@ -6,7 +6,8 @@
   <main class="column" style="margin: 10px 20px 10px 20px">
     <!-- Main Dashboard Content -->
     <div id="dashboard" class="dash-content">
-      <div class="container">
+      <div class="box">
+        <h1 class="title">Welcome back, {{ Auth::user()->name }}!</h1>
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card">
@@ -20,32 +21,17 @@
                 @endif
 
                 {{ __('You are logged in test 1!') }}
+                Google Analytics Stuff will go here
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Start Profile Content-->
-    <div id="profile" class="dash-content">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">{{ __('Dashboard') }}</div>
-
-              <div class="card-body">
-                @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                  {{ session('status') }}
-                </div>
-                @endif
-
-                {{ __('You are logged in test 2!') }}
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Start Tournament Content-->
+    <div id="tournament" class="dash-content">
+      <div class="box section is-medium">
+        Tournment Schedule editor form goes here
       </div>
     </div>
     <!-- Main Dashboard Content -->
