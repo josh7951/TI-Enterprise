@@ -7,7 +7,6 @@
     </ul>
   </nav>
 
-
   <div class="columns">
     <!--left column-->
     <div class="column is-half">
