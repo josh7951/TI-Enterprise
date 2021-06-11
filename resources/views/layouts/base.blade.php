@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>TI-Enterprise</title>
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"> --}}
-    <link rel="stylesheet" href="{{ URL::asset('\css\mystyles.css') }}">
+    <link rel="stylesheet" href="\css\mystyles.min.css">
     <link rel="stylesheet" href="\css\glider.css">
     <link rel="icon" href="\images\LOGO\True-Image-Logo-V1.png">
   </head>
