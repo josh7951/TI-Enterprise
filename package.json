@@ -3,13 +3,13 @@
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
-        "watch": "mix watch",
+        "watch": "mix watch && css-watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
         "production": "mix --production",
 
-        "css-build": "node-sass --omit-source-map-url resources/sass/mystyles.scss resources/scss/mystyles.css",
+        "css-build": "node-sass --omit-source-map-url resources/sass/mystyles.scss resources/css/mystyles.css",
         "css-watch": "npm run css-build -- --watch",
         "start": "npm run css-watch"
     },
