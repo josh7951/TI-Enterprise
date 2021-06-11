@@ -39421,7 +39421,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("section", { staticClass: "hero" }, [
+      _c("section", { staticClass: "hero mt-3" }, [
         _c(
           "div",
           {
@@ -39667,94 +39667,100 @@ var staticRenderFns = [
           _c("hr")
         ]),
         _vm._v(" "),
-        _c("section", { staticClass: "section has-background-white-ter" }, [
-          _c(
-            "h1",
-            {
-              staticClass: "subtitle is-3",
-              staticStyle: { "text-align": "center", "font-weight": "bold" }
-            },
-            [_vm._v("True Image Bass Team")]
-          ),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "/about" } }, [
-            _c("img", {
-              staticClass: "image is-square team-member-home",
-              staticStyle: { "padding-top": "0rem" },
-              attrs: {
-                title: "Team Photo",
-                src: "\\images\\True-Image-Team.jpg",
-                alt: "True-Image-Team.jpg"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
-            _c("div", { staticClass: "column" }, [
+        _c(
+          "section",
+          { staticClass: "section has-background-white-ter mb-6" },
+          [
+            _c(
+              "h1",
+              {
+                staticClass: "subtitle is-3",
+                staticStyle: { "text-align": "center", "font-weight": "bold" }
+              },
+              [_vm._v("True Image Bass Team")]
+            ),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "/about" } }, [
               _c("img", {
-                staticClass: "image is-128x128 team-member-home",
+                staticClass: "image is-square team-member-home",
+                staticStyle: { "padding-top": "0rem" },
                 attrs: {
-                  title: "Gabriel Diaz",
-                  src: "\\images\\team-members\\gabriel-diaz.jpg",
-                  alt: "gabriel-diaz.jpg"
+                  title: "Team Photo",
+                  src: "\\images\\True-Image-Team.jpg",
+                  alt: "True-Image-Team.jpg"
                 }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [_vm._v("Gabriel Diaz")])
+              })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "column is-narrow" }),
+            _c("br"),
             _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c("img", {
-                staticClass: "image is-128x128 team-member-home",
-                attrs: {
-                  title: "Gregory Halliman",
-                  src: "\\images\\team-members\\gregory-halliman.jpg",
-                  alt: "gregory-halliman.jpg"
-                }
-              }),
+            _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
+              _c("div", { staticClass: "column" }, [
+                _c("img", {
+                  staticClass: "image is-128x128 team-member-home",
+                  attrs: {
+                    title: "Gabriel Diaz",
+                    src: "\\images\\team-members\\gabriel-diaz.jpg",
+                    alt: "gabriel-diaz.jpg"
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "name-home" }, [_vm._v("Gabriel Diaz")])
+              ]),
               _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [
-                _vm._v("Gregory Halliman")
+              _c("div", { staticClass: "column is-narrow" }),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c("img", {
+                  staticClass: "image is-128x128 team-member-home",
+                  attrs: {
+                    title: "Gregory Halliman",
+                    src: "\\images\\team-members\\gregory-halliman.jpg",
+                    alt: "gregory-halliman.jpg"
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "name-home" }, [
+                  _vm._v("Gregory Halliman")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
+              _c("div", { staticClass: "column" }, [
+                _c("img", {
+                  staticClass: "image is-128x128 team-member-home",
+                  attrs: {
+                    title: "Brian Nunn",
+                    src: "\\images\\team-members\\brian-nunn2.jpg",
+                    alt: "brian-nunn.jpg"
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "name-home" }, [_vm._v("Brian Nunn")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column is-narrow" }),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c("img", {
+                  staticClass: "image is-128x128 team-member-home",
+                  attrs: {
+                    title: "Melvin Williams",
+                    src: "\\images\\team-members\\melvin-williams.jpg",
+                    alt: "melvin-williams.jpg"
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "name-home" }, [
+                  _vm._v("Melvin Williams")
+                ])
               ])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "columns is-variable is-2 is-mobile" }, [
-            _c("div", { staticClass: "column" }, [
-              _c("img", {
-                staticClass: "image is-128x128 team-member-home",
-                attrs: {
-                  title: "Brian Nunn",
-                  src: "\\images\\team-members\\brian-nunn2.jpg",
-                  alt: "brian-nunn.jpg"
-                }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [_vm._v("Brian Nunn")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "column is-narrow" }),
-            _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c("img", {
-                staticClass: "image is-128x128 team-member-home",
-                attrs: {
-                  title: "Melvin Williams",
-                  src: "\\images\\team-members\\melvin-williams.jpg",
-                  alt: "melvin-williams.jpg"
-                }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "name-home" }, [_vm._v("Melvin Williams")])
-            ])
-          ])
-        ]),
+          ]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "modal", attrs: { id: "homeModal1" } }, [
           _c("div", { staticClass: "modal-background" }),

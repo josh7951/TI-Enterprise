@@ -1,7 +1,7 @@
 <template>
   <div>
    <!--Begin Hero Section--> 
-    <section class="hero">
+    <section class="hero mt-3">
       <div class="box has-text-centered" style="background-color:#303030!important;border-radius:0.5rem;box-shadow: 5px 10px 18px;">
         <div class="glider-contain">
           <br>
@@ -88,7 +88,7 @@
       <hr>
     </div>
     <!--Start Team Member Section-->
-    <section class="section has-background-white-ter">
+    <section class="section has-background-white-ter mb-6">
       <h1 class="subtitle is-3" style="text-align: center; font-weight: bold;">True Image Bass Team</h1>
       <hr>
         <a href="/about"><img class="image is-square team-member-home" title="Team Photo" src="\images\True-Image-Team.jpg" alt="True-Image-Team.jpg" style="padding-top: 0rem;"></a>
