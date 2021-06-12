@@ -20,7 +20,7 @@
     </div>
     <!--right column-->
     <div class="column is-two-fifths">
-      <form action="" method="post" class="form">
+      <form action="contact" method="post" class="form">
         <input type="hidden" name="_token" v-bind:value="csrf">
         <!--Start Contact Form-->
         <!--Name Field-->
@@ -47,7 +47,7 @@
             <textarea class="textarea" placeholder="Your message here . . . "></textarea>
           </div>
         </div>
-        <!--<button class="button is-info">Send Message</button>-->
+        <button class="button is-info">Send Message</button>
       </form>
     </div>
   </div>
@@ -61,6 +61,7 @@
       console.log('Component mounted.')
     },
     data() {
+      contact: "{{ route('contact.store') }}"
       return {
         csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
       }

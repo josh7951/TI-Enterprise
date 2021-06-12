@@ -2058,6 +2058,8 @@ __webpack_require__.r(__webpack_exports__);
     console.log('Component mounted.');
   },
   data: function data() {
+    contact: "{{ route('contact.store') }}";
+
     return {
       csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     };
@@ -39193,7 +39195,7 @@ var render = function() {
       _c("div", { staticClass: "column is-two-fifths" }, [
         _c(
           "form",
-          { staticClass: "form", attrs: { action: "", method: "post" } },
+          { staticClass: "form", attrs: { action: "contact", method: "post" } },
           [
             _c("input", {
               attrs: { type: "hidden", name: "_token" },
@@ -39204,7 +39206,11 @@ var render = function() {
             _vm._v(" "),
             _vm._m(3),
             _vm._v(" "),
-            _vm._m(4)
+            _vm._m(4),
+            _vm._v(" "),
+            _c("button", { staticClass: "button is-info" }, [
+              _vm._v("Send Message")
+            ])
           ]
         )
       ])
