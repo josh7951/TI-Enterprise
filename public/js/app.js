@@ -2053,12 +2053,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
   },
   data: function data() {
+    contact: "{{ route('contact.store') }}";
+
     return {
       csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     };
@@ -39194,7 +39195,7 @@ var render = function() {
       _c("div", { staticClass: "column is-two-fifths" }, [
         _c(
           "form",
-          { staticClass: "form", attrs: { action: "", method: "post" } },
+          { staticClass: "form", attrs: { action: "contact", method: "post" } },
           [
             _c("input", {
               attrs: { type: "hidden", name: "_token" },
@@ -39205,7 +39206,11 @@ var render = function() {
             _vm._v(" "),
             _vm._m(3),
             _vm._v(" "),
-            _vm._m(4)
+            _vm._m(4),
+            _vm._v(" "),
+            _c("button", { staticClass: "button is-info" }, [
+              _vm._v("Send Message")
+            ])
           ]
         )
       ])
@@ -39303,7 +39308,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "control" }, [
         _c("input", {
           staticClass: "input",
-          attrs: { type: "text", placeholder: "Your Name" }
+          attrs: { type: "text", name: "name", placeholder: "Your Name" }
         })
       ])
     ])
@@ -39318,7 +39323,11 @@ var staticRenderFns = [
       _c("div", { staticClass: "control has-icons-left has-icons-right" }, [
         _c("input", {
           staticClass: "input",
-          attrs: { type: "email", placeholder: "hello@example.com" }
+          attrs: {
+            type: "email",
+            name: "email",
+            placeholder: "hello@example.com"
+          }
         }),
         _vm._v(" "),
         _c("span", { staticClass: "icon is-small is-left" }, [
@@ -39337,7 +39346,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "control" }, [
         _c("textarea", {
           staticClass: "textarea",
-          attrs: { placeholder: "Your message here . . . " }
+          attrs: { name: "message", placeholder: "Your message here . . . " }
         })
       ])
     ])

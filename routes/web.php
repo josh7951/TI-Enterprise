@@ -30,9 +30,8 @@ Route::get('/store', function() {
     return view('store');
 });
 
-Route::get('/contact', function() {
-    return view('contact');
-});
+Route::get('/contact', [App\Http\Controllers\ContactFormController::class, 'createForm']);
+Route::post('/contact', [App\Http\Controllers\ContactFormController::class, 'ContactUsForm'])->name('contact.store');
 
 Route::get('/ray-caldwell', function() {
     return view('caldwell');
