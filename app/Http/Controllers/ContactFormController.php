@@ -25,7 +25,7 @@ class ContactFormController extends Controller {
          //  Store data in database
         Contact::create($request->all());
 
-         \Mail::send('mail', array(
+         \Mail::send('mail.contactus', array(
             'name' => $request->get('name'),
             'email' => $request->get('email'),
             'user_query' => $request->get('message'),

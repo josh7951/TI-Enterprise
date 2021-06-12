@@ -39308,7 +39308,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "control" }, [
         _c("input", {
           staticClass: "input",
-          attrs: { type: "text", placeholder: "Your Name" }
+          attrs: { type: "text", name: "name", placeholder: "Your Name" }
         })
       ])
     ])
@@ -39323,7 +39323,11 @@ var staticRenderFns = [
       _c("div", { staticClass: "control has-icons-left has-icons-right" }, [
         _c("input", {
           staticClass: "input",
-          attrs: { type: "email", placeholder: "hello@example.com" }
+          attrs: {
+            type: "email",
+            name: "email",
+            placeholder: "hello@example.com"
+          }
         }),
         _vm._v(" "),
         _c("span", { staticClass: "icon is-small is-left" }, [
@@ -39342,7 +39346,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "control" }, [
         _c("textarea", {
           staticClass: "textarea",
-          attrs: { placeholder: "Your message here . . . " }
+          attrs: { name: "message", placeholder: "Your message here . . . " }
         })
       ])
     ])
