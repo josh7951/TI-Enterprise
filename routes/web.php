@@ -30,6 +30,10 @@ Route::get('/store', function() {
     return view('store');
 });
 
+Route::get('/tournaments', function() {
+    return view('tournaments');
+});
+
 Route::get('/contact', [App\Http\Controllers\ContactFormController::class, 'createForm']);
 Route::post('/contact', [App\Http\Controllers\ContactFormController::class, 'ContactUsForm'])->name('contact.store');
 
