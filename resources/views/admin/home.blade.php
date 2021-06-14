@@ -1,8 +1,6 @@
 @extends('layouts.dash')
 
 @section('content')
-<div class="columns">
-  <aside-menu :user="{{ Auth::user() }}" route="{{ route('logout') }}" csrf="{{csrf_token()}}"></aside-menu>
   <main class="column" style="margin: 10px 20px 10px 20px">
     <!-- Main Dashboard Content -->
     <div id="dashboard" class="dash-content">
@@ -57,7 +55,6 @@
       </div>
     </div>
   </main>
-</div>
 @endsection
 <style>
   .submenu-list {

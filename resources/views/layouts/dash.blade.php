@@ -20,6 +20,8 @@
 <body>
     <div id="app">
     <dashbar :user="{{ Auth::user() }}" route="{{ route('logout') }}" csrf="{{csrf_token()}}"></dashbar>
+    <div class="columns">
+        <aside-menu :user="{{ Auth::user() }}" route="{{ route('logout') }}" csrf="{{csrf_token()}}"></aside-menu>
         @yield('content')
     </div>
 </body>
