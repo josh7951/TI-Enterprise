@@ -10,8 +10,7 @@
     <link rel="icon" href="\images\LOGO\True-Image-Logo-V1.png">
   </head>
   <body>
-
-
+  
       <div id="app">
         <navbar></navbar>
         <div class="container">

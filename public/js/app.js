@@ -38873,7 +38873,7 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("p", { staticClass: "menu-label title" }, [
-              _vm._v("\n        Additional Links\n      ")
+              _vm._v("\n        Quick Links\n      ")
             ]),
             _vm._v(" "),
             _vm._m(3),
@@ -38894,7 +38894,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("li", [
       _c("a", { staticClass: "name", attrs: { href: "#dashboard" } }, [
-        _vm._v("Dashboard "),
+        _vm._v("Dashboard "),
         _c("i", { staticClass: "far fa-chart-bar" })
       ])
     ])
@@ -38904,9 +38904,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("a", { staticClass: "name", attrs: { href: "#profile" } }, [
-        _vm._v("Profile "),
-        _c("i", { staticClass: "fas fa-user" })
+      _c("a", { staticClass: "name", attrs: { href: "#something" } }, [
+        _vm._v("Something "),
+        _c("i", { staticClass: "far fa-calendar-alt" })
       ])
     ])
   },
@@ -38926,19 +38926,32 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", [
-      _c("a", { staticClass: "has-submenu name" }, [_vm._v("List 1")]),
+      _c("a", { staticClass: "has-submenu name" }, [
+        _vm._v("Manage "),
+        _c("i", { staticClass: "fas fa-cog" })
+      ]),
       _vm._v(" "),
       _c("ul", { staticClass: "submenu-list" }, [
         _c("li", [
-          _c("a", { staticClass: "name", attrs: { href: "" } }, [
-            _vm._v("Link 1")
-          ])
+          _c(
+            "a",
+            { staticClass: "name", attrs: { href: "/tournament-editor" } },
+            [
+              _vm._v("Tournament Schedule "),
+              _c("i", { staticClass: "far fa-calendar-alt" })
+            ]
+          )
         ]),
         _vm._v(" "),
         _c("li", [
-          _c("a", { staticClass: "name", attrs: { href: "" } }, [
-            _vm._v("Link 2")
-          ])
+          _c(
+            "a",
+            {
+              staticClass: "name",
+              attrs: { href: "/tournament-editor/create" }
+            },
+            [_vm._v("Add Tournament Event")]
+          )
         ]),
         _vm._v(" "),
         _c("li", [

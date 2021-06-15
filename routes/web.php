@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TournamentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,8 +33,12 @@ Route::get('/store', function() {
     return view('store');
 });
 
-Route::get('/contact', [App\Http\Controllers\ContactFormController::class, 'createForm']);
-Route::post('/contact', [App\Http\Controllers\ContactFormController::class, 'ContactUsForm'])->name('contact.store');
+Route::get('/tournament-schedule', function() {
+    return view('tournaments');
+});
+
+Route::get('/contact', [ContactFormController::class, 'createForm']);
+Route::post('/contact', [ContactFormController::class, 'ContactUsForm'])->name('contact.store');
 
 Route::get('/ray-caldwell', function() {
     return view('caldwell');
@@ -41,6 +48,8 @@ Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => ['prevent-back-history']],function(){
 
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+    Route::resource('tournament-editor', TournamentController::class);
 
 });

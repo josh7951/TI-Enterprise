@@ -6,8 +6,8 @@
           <p class="menu-label title">
             General
           </p>
-          <li><a class="name" href="#dashboard">Dashboard <i class="far fa-chart-bar"></i></a></li>
-          <li><a class="name" href="#profile">Profile&nbsp;<i class="fas fa-user"></i></a></li>
+          <li><a class="name" href="#dashboard">Dashboard&nbsp;<i class="far fa-chart-bar"></i></a></li>
+          <li><a class="name" href="#something">Something&nbsp;<i class="far fa-calendar-alt"></i></a></li>
           <li><a class="name" href="#settings">Settings&nbsp;<i class="fas fa-cog"></i></a></li>
           <li>
             <a :href="route" style="color:red;"
@@ -21,13 +21,13 @@
             </form>
           </li>
           <p class="menu-label title">
-            Additional Links
+            Quick Links
           </p>
           <li>
-            <a class="has-submenu name">List 1</a>
+            <a class="has-submenu name">Manage&nbsp;<i class="fas fa-cog"></i></a>
             <ul class="submenu-list">
-              <li><a class="name" href="">Link 1</a></li>
-              <li><a class="name" href="">Link 2</a></li>
+              <li><a class="name" href="/tournament-editor">Tournament Schedule&nbsp;<i class="far fa-calendar-alt"></i></a></li>
+              <li><a class="name" href="/tournament-editor/create">Add Tournament Event</a></li>
               <li><a class="name" href="">Link 3</a></li>
             </ul>
           </li>
