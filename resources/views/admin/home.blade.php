@@ -26,9 +26,9 @@
       </div>
     </div>
     <!-- Start Tournament Content-->
-    <div id="tournament" class="dash-content">
+    <div id="something" class="dash-content">
       <div class="box section is-medium">
-        Tournment Schedule editor form goes here
+        Something goes here idk what yet
       </div>
     </div>
     <!-- Main Dashboard Content -->

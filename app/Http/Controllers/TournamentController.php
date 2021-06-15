@@ -37,12 +37,20 @@ class TournamentController extends Controller
      */
     public function store(Request $request)
     {
-        $tournamentData = $request->validate([
+        $this->validate($request, [
             'series' => 'required|max:100',
             'tournament' => 'required|max:255',
             'location' => 'required|max:100',
         ]);
-        $show = Tournaments::create($tournamentData);
+        
+        $tournamentData = new Tournaments([
+            'series' => $request->input('series'),
+            'tournament' => $request->input('tournament'),
+            'location' => $request->input('location'),
+            'start_date' => $request->input('start_date'),
+            'end_date' => $request->input('end_date'),
+        ]);
+        $tournamentData->save();
 
         return redirect('/tournament-editor')->with('success', 'Tournament was successfully added!');
     }
@@ -80,12 +88,20 @@ class TournamentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $tournamentData = $request->validate([
+        $this->validate($request, [
             'series' => 'required|max:100',
             'tournament' => 'required|max:255',
             'location' => 'required|max:100',
         ]);
-        Tournament::whereId($id)->update($tournamentData);
+        
+        $tournamentData = [
+            'series' => $request->input('series'),
+            'tournament' => $request->input('tournament'),
+            'location' => $request->input('location'),
+            'start_date' => $request->input('start_date'),
+            'end_date' => $request->input('end_date'),
+        ];
+        Tournaments::whereId($id)->update($tournamentData);
 
         return redirect('/tournament-editor')->with('success', 'Tournament was successfully updated!');
     }
@@ -98,7 +114,7 @@ class TournamentController extends Controller
      */
     public function destroy($id)
     {
-        $tournament = Tournament::findOrFail($id);
+        $tournament = Tournaments::findOrFail($id);
         $tournament->delete();
 
         return redirect('/tournament-editor')->with('success', 'Tournament was successfully deleted!');
