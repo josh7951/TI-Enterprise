@@ -50,6 +50,16 @@
             <div v-if="errors && errors.message" class="has-text-danger">{{ errors.message[0] }}</div>
           </div>
         </div>
+          <div>
+            <google-re-captcha-v3
+              v-model="form.gRecaptchaResponse"
+              ref="captcha"
+              :site-key="mySiteKeyVariable"
+              id="contact_us_id"
+              
+              action="contact"
+            ></google-re-captcha-v3>
+          </div>
         <button class="button is-info">Send Message</button>
         <div v-if="success" class="has-text-primary">
             Message sent!
@@ -62,7 +72,9 @@
 </template>
 
 <script>
+  import GoogleReCaptchaV3 from './googlerecaptchav3/GoogleReCaptchaV3.vue';
   export default {
+    components: { GoogleReCaptchaV3 },
     mounted() {
       console.log('Component mounted.')
     },
@@ -73,6 +85,10 @@
         errors: {},
         success: false,
         loaded: true,
+        form: {
+          gRecaptchaResponse: null
+        },
+        mySiteKeyVariable: '6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK',
       }
     },
     methods: {
@@ -82,10 +98,12 @@
           this.success = false;
           this.errors = {};
           axios.post('/contact', this.fields).then(response => {
+            this.$refs.captcha.execute();
             this.fields = {}; //clear input fields
             this.loaded = true;
             this.success = true;
           }).catch(error => {
+            this.$refs.captcha.execute();
             this.loaded = true;
             if(error.response.status === 422){
               this.errors = error.response.data.errors || {};
