@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use Mail;
+use TimeHunter\LaravelGoogleReCaptchaV3\Validations\GoogleReCaptchaV3ValidationRule;
 
 class ContactFormController extends Controller {
 
@@ -19,7 +20,8 @@ class ContactFormController extends Controller {
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
-            'message' => 'required'
+            'message' => 'required',
+            'gRecaptchaResponse' => [new GoogleReCaptchaV3ValidationRule('contact')]
          ]);
 
          //  Store data in database

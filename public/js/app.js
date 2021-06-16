@@ -2085,9 +2085,6 @@ __webpack_require__.r(__webpack_exports__);
       errors: {},
       success: false,
       loaded: true,
-      form: {
-        gRecaptchaResponse: null
-      },
       mySiteKeyVariable: '6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK'
     };
   },
@@ -39577,11 +39574,11 @@ var render = function() {
                     action: "contact"
                   },
                   model: {
-                    value: _vm.form.gRecaptchaResponse,
+                    value: _vm.fields.gRecaptchaResponse,
                     callback: function($$v) {
-                      _vm.$set(_vm.form, "gRecaptchaResponse", $$v)
+                      _vm.$set(_vm.fields, "gRecaptchaResponse", $$v)
                     },
-                    expression: "form.gRecaptchaResponse"
+                    expression: "fields.gRecaptchaResponse"
                   }
                 })
               ],

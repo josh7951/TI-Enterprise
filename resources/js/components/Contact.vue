@@ -52,7 +52,7 @@
         </div>
           <div>
             <google-re-captcha-v3
-              v-model="form.gRecaptchaResponse"
+              v-model="fields.gRecaptchaResponse"
               ref="captcha"
               :site-key="mySiteKeyVariable"
               id="contact_us_id"
@@ -85,9 +85,6 @@
         errors: {},
         success: false,
         loaded: true,
-        form: {
-          gRecaptchaResponse: null
-        },
         mySiteKeyVariable: '6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK',
       }
     },
