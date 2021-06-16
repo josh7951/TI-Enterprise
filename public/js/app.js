@@ -1996,6 +1996,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _googlerecaptchav3_GoogleReCaptchaV3_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./googlerecaptchav3/GoogleReCaptchaV3.vue */ "./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue");
 //
 //
 //
@@ -2059,7 +2060,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    GoogleReCaptchaV3: _googlerecaptchav3_GoogleReCaptchaV3_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  },
   mounted: function mounted() {
     console.log('Component mounted.');
   },
@@ -2069,7 +2084,11 @@ __webpack_require__.r(__webpack_exports__);
       fields: {},
       errors: {},
       success: false,
-      loaded: true
+      loaded: true,
+      form: {
+        gRecaptchaResponse: null
+      },
+      mySiteKeyVariable: '6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK'
     };
   },
   methods: {
@@ -2081,11 +2100,15 @@ __webpack_require__.r(__webpack_exports__);
         this.success = false;
         this.errors = {};
         axios.post('/contact', this.fields).then(function (response) {
+          _this.$refs.captcha.execute();
+
           _this.fields = {}; //clear input fields
 
           _this.loaded = true;
           _this.success = true;
         })["catch"](function (error) {
+          _this.$refs.captcha.execute();
+
           _this.loaded = true;
 
           if (error.response.status === 422) {
@@ -2706,6 +2729,104 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'google-recaptcha-v3',
+  props: {
+    action: {
+      type: String,
+      required: false,
+      "default": 'validate_grecaptcha'
+    },
+    id: {
+      type: String,
+      required: false,
+      "default": 'grecaptcha_container'
+    },
+    siteKey: {
+      type: String,
+      required: false,
+      // set to true if you don't want to store the siteKey in this component
+      "default": '' // set siteKey here if you want to store it in this component
+
+    },
+    inline: {
+      type: Boolean,
+      required: false,
+      "default": false
+    }
+  },
+  data: function data() {
+    return {
+      captchaId: null
+    };
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+  methods: {
+    init: function init() {
+      if (!document.getElementById('gRecaptchaScript')) {
+        window.gRecaptchaOnLoadCallbacks = [this.render];
+
+        window.gRecaptchaOnLoad = function () {
+          for (var i = 0; i < window.gRecaptchaOnLoadCallbacks.length; i++) {
+            window.gRecaptchaOnLoadCallbacks[i]();
+          }
+
+          delete window.gRecaptchaOnLoadCallbacks;
+          delete window.gRecaptchaOnLoad;
+        };
+
+        var recaptchaScript = document.createElement('script');
+        recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js?render=explicit&onload=gRecaptchaOnLoad');
+        recaptchaScript.setAttribute('id', 'gRecaptchaScript');
+        recaptchaScript.async = true;
+        recaptchaScript.defer = true;
+        document.head.appendChild(recaptchaScript);
+      } else if (!window.grecaptcha || !window.grecaptcha.render) {
+        window.gRecaptchaOnLoadCallbacks.push(this.render);
+      } else {
+        this.render();
+      }
+    },
+    render: function render() {
+      this.captchaId = window.grecaptcha.render(this.id, {
+        sitekey: this.siteKey,
+        badge: this.inline === true ? 'inline' : '',
+        size: 'invisible',
+        'expired-callback': this.execute
+      });
+      this.execute();
+    },
+    execute: function execute() {
+      var _this = this;
+
+      window.grecaptcha.execute(this.captchaId, {
+        action: this.action
+      }).then(function (token) {
+        _this.$emit('input', token);
+      });
+    }
   }
 });
 
@@ -38538,6 +38659,45 @@ component.options.__file = "resources/js/components/TeamComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _GoogleReCaptchaV3_vue_vue_type_template_id_6299eecc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc& */ "./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc&");
+/* harmony import */ var _GoogleReCaptchaV3_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoogleReCaptchaV3.vue?vue&type=script&lang=js& */ "./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _GoogleReCaptchaV3_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _GoogleReCaptchaV3_vue_vue_type_template_id_6299eecc___WEBPACK_IMPORTED_MODULE_0__.render,
+  _GoogleReCaptchaV3_vue_vue_type_template_id_6299eecc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/AsideMenu.vue?vue&type=script&lang=js&":
 /*!************************************************************************!*\
   !*** ./resources/js/components/AsideMenu.vue?vue&type=script&lang=js& ***!
@@ -38679,6 +38839,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TeamComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamComponent.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************!*\
+  !*** ./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleReCaptchaV3_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GoogleReCaptchaV3.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleReCaptchaV3_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -38831,6 +39007,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamComponent_vue_vue_type_template_id_4916dec5___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamComponent_vue_vue_type_template_id_4916dec5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TeamComponent.vue?vue&type=template&id=4916dec5& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamComponent.vue?vue&type=template&id=4916dec5&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc&":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc& ***!
+  \********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleReCaptchaV3_vue_vue_type_template_id_6299eecc___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleReCaptchaV3_vue_vue_type_template_id_6299eecc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleReCaptchaV3_vue_vue_type_template_id_6299eecc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc&");
 
 
 /***/ }),
@@ -39372,6 +39565,28 @@ var render = function() {
                   : _vm._e()
               ])
             ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("google-re-captcha-v3", {
+                  ref: "captcha",
+                  attrs: {
+                    "site-key": _vm.mySiteKeyVariable,
+                    id: "contact_us_id",
+                    action: "contact"
+                  },
+                  model: {
+                    value: _vm.form.gRecaptchaResponse,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "gRecaptchaResponse", $$v)
+                    },
+                    expression: "form.gRecaptchaResponse"
+                  }
+                })
+              ],
+              1
+            ),
             _vm._v(" "),
             _c("button", { staticClass: "button is-info" }, [
               _vm._v("Send Message")
@@ -41029,6 +41244,31 @@ var staticRenderFns = [
     ])
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc&":
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue?vue&type=template&id=6299eecc& ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: _vm.id } })
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
