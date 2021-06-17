@@ -11,6 +11,20 @@
         <div class="buttons is-right">
           <a href="/tournament-editor/create" class="button is-primary is-rounded"><i class="fas fa-plus-circle"></i>&nbsp;Add Tournament</a>
         </div>
+        <form action="" method="GET" role="search">
+          @csrf
+          <div class="field has-addons has-addons-right">
+            <div class="control has-icons-left">
+              <input class="input" type="text" placeholder="Search Tournaments..." name="q">
+              <span class="icon is-small is-left"><i class="fas fa-search"></i></span>
+            </div>
+            <div class="control">
+              <button type="submit" class="button is-info">
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
         <table class="table is-striped">
           <thead>
             <tr>
@@ -46,6 +60,9 @@
           </tbody>
         </table>
       </div>
+    </div>
+    <div class="box">
+      {!! $tournaments->links() !!}
     </div>
   </div>
 @endsection

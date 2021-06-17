@@ -62,18 +62,9 @@ class TournamentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
+    public function show($id)
     {
-        $searchKey = trim($request->get('q'));
-        $tournaments = Tournaments::query()
-            ->where('location', 'like', "%{$searchKey}%")
-            ->orWhere('tournament', 'like', "%{$searchKey}%")
-            ->orderBy('start_date', 'desc')
-            ->get();
-
-        return view('admin.tournamentindex', [
-            'tournaments' => $tournaments
-            ])->with('i', (request()->input('page', 1) - 1) * 10);
+        //
     }
 
     /**
