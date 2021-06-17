@@ -37,7 +37,7 @@ TI(True Image)-Enterprise is a Competitive Fishing Team and Fishing Bait Vendor 
 To be able to access forms requiring you to pass ReCaptcha you must obtain a `SECRET_KEY` and a `SITE_KEY` from Google
 1. If you do not have one already, create an account on [Google's ReCaptcha Site](https://www.google.com/u/0/recaptcha/admin/create) by logging in with your GMAIL account.
 2. Fill in the Label field with a name of your choosing
-3. **IMPORTANT** select reCAPTCHA v3 under reCAPTCHA type
+3. **IMPORTANT:** select reCAPTCHA v3 under reCAPTCHA type
 4. Add a domain name that you will be using to access the site (e.g. example.com or localhost)
 5. Accept the terms of service
 6. Add your keys to your `.env` file on these lines
