@@ -2095,7 +2095,7 @@ __webpack_require__.r(__webpack_exports__);
       errors: {},
       success: false,
       loaded: true,
-      mySiteKeyVariable: '6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK'
+      siteKey: "6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK"
     };
   },
   methods: {
@@ -39637,7 +39637,7 @@ var render = function() {
                 _c("google-re-captcha-v3", {
                   ref: "captcha",
                   attrs: {
-                    "site-key": _vm.mySiteKeyVariable,
+                    "site-key": _vm.siteKey,
                     id: "contact_us_id",
                     action: "contact"
                   },

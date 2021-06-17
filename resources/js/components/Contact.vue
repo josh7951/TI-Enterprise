@@ -71,7 +71,7 @@
             <google-re-captcha-v3
               v-model="fields.gRecaptchaResponse"
               ref="captcha"
-              :site-key="mySiteKeyVariable"
+              :site-key="siteKey"
               id="contact_us_id"
               action="contact"
             ></google-re-captcha-v3> <!-- removed inline -->
@@ -95,7 +95,7 @@
         errors: {},
         success: false,
         loaded: true,
-        mySiteKeyVariable: '6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK',
+        siteKey: process.env.MIX_SITE_KEY,
       }
     },
     methods: {

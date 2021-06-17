@@ -45,6 +45,7 @@ To be able to access forms requiring you to pass ReCaptcha you must obtain a `SE
    RECAPTCHA_V3_SECRET_KEY=
    RECAPTCHA_V3_SITE_KEY=
    ```
+   - Also add the same `SITE_KEY` again to `MIX_SITE_KEY=` (MIX prefix enables you to be able to access the .env variable within vue components)
 
 ## Frameworks
 1. [Vue.js](https://vuejs.org/)
