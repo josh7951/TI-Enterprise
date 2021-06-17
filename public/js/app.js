@@ -2070,13 +2070,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     GoogleReCaptchaV3: _googlerecaptchav3_GoogleReCaptchaV3_vue__WEBPACK_IMPORTED_MODULE_0__.default
-  },
-  mounted: function mounted() {
-    console.log('Component mounted.');
   },
   data: function data() {
     return {
@@ -39427,6 +39437,16 @@ var render = function() {
       _vm._m(1),
       _vm._v(" "),
       _c("div", { staticClass: "column is-two-fifths" }, [
+        _vm.success
+          ? _c("div", { staticClass: "message is-success" }, [
+              _c("div", { staticClass: "message-body" }, [
+                _vm._v(
+                  "\r\n          Message sent! We will get back to you as soon as possible!\r\n        "
+                )
+              ])
+            ])
+          : _vm._e(),
+        _vm._v(" "),
         _c(
           "form",
           {
@@ -39472,14 +39492,30 @@ var render = function() {
                       _vm.$set(_vm.fields, "name", $event.target.value)
                     }
                   }
-                }),
-                _vm._v(" "),
-                _vm.errors && _vm.errors.name
-                  ? _c("div", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.name[0]))
-                    ])
-                  : _vm._e()
-              ])
+                })
+              ]),
+              _vm._v(" "),
+              _vm.errors && _vm.errors.name
+                ? _c("div", { staticClass: "message is-danger" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "message-body",
+                        staticStyle: {
+                          padding: ".25em .75em",
+                          "margin-top": ".25em"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\r\n              " +
+                            _vm._s(_vm.errors.name[0]) +
+                            "\r\n            "
+                        )
+                      ]
+                    )
+                  ])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "field" }, [
@@ -39515,15 +39551,31 @@ var render = function() {
                     }
                   }),
                   _vm._v(" "),
-                  _vm._m(2),
-                  _vm._v(" "),
-                  _vm.errors && _vm.errors.email
-                    ? _c("div", { staticClass: "has-text-danger" }, [
-                        _vm._v(_vm._s(_vm.errors.email[0]))
-                      ])
-                    : _vm._e()
+                  _vm._m(2)
                 ]
-              )
+              ),
+              _vm._v(" "),
+              _vm.errors && _vm.errors.email
+                ? _c("div", { staticClass: "message is-danger" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "message-body",
+                        staticStyle: {
+                          padding: ".25em .75em",
+                          "margin-top": ".25em"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\r\n              " +
+                            _vm._s(_vm.errors.email[0]) +
+                            "\r\n            "
+                        )
+                      ]
+                    )
+                  ])
+                : _vm._e()
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "field" }, [
@@ -39556,8 +39608,24 @@ var render = function() {
                 }),
                 _vm._v(" "),
                 _vm.errors && _vm.errors.message
-                  ? _c("div", { staticClass: "has-text-danger" }, [
-                      _vm._v(_vm._s(_vm.errors.message[0]))
+                  ? _c("div", { staticClass: "message is-danger" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "message-body",
+                          staticStyle: {
+                            padding: ".25em .75em",
+                            "margin-top": ".25em"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\r\n                " +
+                              _vm._s(_vm.errors.message[0]) +
+                              "\r\n              "
+                          )
+                        ]
+                      )
                     ])
                   : _vm._e()
               ])
@@ -39587,13 +39655,7 @@ var render = function() {
             _vm._v(" "),
             _c("button", { staticClass: "button is-info" }, [
               _vm._v("Send Message")
-            ]),
-            _vm._v(" "),
-            _vm.success
-              ? _c("div", { staticClass: "has-text-primary" }, [
-                  _vm._v("\r\n            Message sent!\r\n        ")
-                ])
-              : _vm._e()
+            ])
           ]
         )
       ])

@@ -20,6 +20,11 @@
     </div>
     <!--right column-->
     <div class="column is-two-fifths">
+      <div v-if="success" class="message is-success">
+        <div class="message-body">
+          Message sent! We will get back to you as soon as possible!
+        </div>
+      </div>
       <form @submit.prevent="ContactUsForm" class="form">
         <input type="hidden" name="_token" v-bind:value="csrf">
         <!--Start Contact Form-->
@@ -28,7 +33,11 @@
           <label class="label">Name</label>
           <div class="control">
             <input class="input" type="text" name="name" v-model="fields.name" placeholder="Your Name">
-            <div v-if="errors && errors.name" class="has-text-danger">{{ errors.name[0] }}</div>
+          </div>
+          <div v-if="errors && errors.name" class="message is-danger">
+            <div class="message-body" style="padding:.25em .75em;margin-top:.25em;">
+              {{ errors.name[0] }}
+            </div>
           </div>
         </div>
         <!--Email Field-->
@@ -39,7 +48,11 @@
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
-            <div v-if="errors && errors.email" class="has-text-danger">{{ errors.email[0] }}</div>
+          </div>
+          <div v-if="errors && errors.email" class="message is-danger">
+            <div class="message-body" style="padding:.25em .75em;margin-top:.25em;">
+              {{ errors.email[0] }}
+            </div>
           </div>
         </div>
         <!--Message Area-->
@@ -47,7 +60,11 @@
           <label class="label">Message</label>
           <div class="control">
             <textarea name="message" v-model="fields.message" class="textarea" placeholder="Your message here . . . "></textarea>
-            <div v-if="errors && errors.message" class="has-text-danger">{{ errors.message[0] }}</div>
+            <div v-if="errors && errors.message" class="message is-danger">
+              <div class="message-body" style="padding:.25em .75em;margin-top:.25em;">
+                {{ errors.message[0] }}
+              </div>
+            </div>
           </div>
         </div>
           <div>
@@ -56,14 +73,10 @@
               ref="captcha"
               :site-key="mySiteKeyVariable"
               id="contact_us_id"
-              
               action="contact"
-            ></google-re-captcha-v3>
+            ></google-re-captcha-v3> <!-- removed inline -->
           </div>
         <button class="button is-info">Send Message</button>
-        <div v-if="success" class="has-text-primary">
-            Message sent!
-        </div>
       </form>
     </div>
   </div>
@@ -75,9 +88,6 @@
   import GoogleReCaptchaV3 from './googlerecaptchav3/GoogleReCaptchaV3.vue';
   export default {
     components: { GoogleReCaptchaV3 },
-    mounted() {
-      console.log('Component mounted.')
-    },
     data() {
       return {
         csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),

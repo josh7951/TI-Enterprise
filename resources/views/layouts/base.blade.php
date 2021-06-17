@@ -21,7 +21,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Copyright &copy; 2020 - All Rights reserved - TI-Enterprise.com
+        Copyright &copy; 2021 - All Rights reserved - TI-Enterprise.com
       </p>
     </div>
   </footer>
