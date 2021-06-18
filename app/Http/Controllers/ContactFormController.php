@@ -33,7 +33,7 @@ class ContactFormController extends Controller {
             'user_query' => $request->get('message'),
         ), function($message) use ($request){
             $message->from($request->email);
-            $message->to('wapseniorproj@gmail.com', 'Admin')->subject('test');
+            $message->to('wapseniorproj@gmail.com', 'Admin')->subject('Submission from Contact Form');
         });
         
         return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
