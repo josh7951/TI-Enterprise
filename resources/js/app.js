@@ -30,6 +30,7 @@ Vue.component('caldwell-content', require('./components/CaldwellComponent.vue').
 Vue.component('navbar', require('./components/Navbar.vue').default);
 
 /** Components for admin panel */
+Vue.component('login', require('./components/Login.vue').default);
 Vue.component('dashbar', require('./components/NavbarDash.vue').default);
 Vue.component('aside-menu', require('./components/AsideMenu.vue').default);
 
