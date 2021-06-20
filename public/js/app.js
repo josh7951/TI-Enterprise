@@ -1997,6 +1997,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _googlerecaptchav3_GoogleReCaptchaV3_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./googlerecaptchav3/GoogleReCaptchaV3.vue */ "./resources/js/components/googlerecaptchav3/GoogleReCaptchaV3.vue");
+/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
 //
 //
 //
@@ -2095,7 +2096,7 @@ __webpack_require__.r(__webpack_exports__);
       errors: {},
       success: false,
       loaded: true,
-      siteKey: "6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK"
+      siteKey: process.env.MIX_SITE_KEY
     };
   },
   methods: {
