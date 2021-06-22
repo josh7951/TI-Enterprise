@@ -1,0 +1,11 @@
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#gallery-image {
+  height: 250px;
+  background-size: cover;
+  background-attachment: fixed;
+}

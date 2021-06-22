@@ -35,6 +35,7 @@ Vue.component('aside-menu', require('./components/AsideMenu.vue').default);
 
 /**Components for Gallery */
 Vue.component('gallery-main', require('./components/Gallery.vue').default);
+Vue.component('gallery-image', require('./components/GalleryImage.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

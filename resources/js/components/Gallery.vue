@@ -5,12 +5,15 @@
                 <li><a href="/">Home</a></li>
                 <li class="is-active"><a href="#" aria-current="page">Gallery</a></li>
             </ul>
-            <section>
-                <div v-for = "image in this.images">
-                    {{ image }}
-                </div>
-            </section>
         </nav>
+        <section id="gallery-container">
+            <gallery-image 
+            :image="image" 
+            v-for="image in this.images" 
+            v-bind:key="image.id"
+            >
+            </gallery-image>
+        </section>
     </div>
 </template>
 
@@ -23,16 +26,5 @@ export default {
             required: true
         }
     },
-    mounted() {
-        console.log('Gallery Mounted');
-    }
 }
 </script>
-
-<section class="hero is-medium is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title is-1" style="text-align:center;">Gallery</h1>
-        </div>
-    </div>
-</section>
