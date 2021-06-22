@@ -1,5 +1,5 @@
 <template>
-    <div class="gallery-image">
+    <div class="gallery-image" v-bind:style="{ backgroundImage: 'url(' + image.url + ')' }">
     </div>
 </template>
 
@@ -13,6 +13,4 @@ export default {
         }
     }
 }
-// <img :src="this.image.url" class="gallery-image">
-//  style="background: url('{{this.image.url}}')"
 </script>

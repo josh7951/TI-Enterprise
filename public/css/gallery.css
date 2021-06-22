@@ -1,11 +1,24 @@
 #gallery-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  margin: 10px;
   gap: 10px;
 }
 
-#gallery-image {
-  height: 250px;
+.gallery-image {
+  height: 300px;
   background-size: cover;
-  background-attachment: fixed;
+  cursor: pointer;
+}
+
+@media(min-width: 500px){
+  #gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 850px){
+  #gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

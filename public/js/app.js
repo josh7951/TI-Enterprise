@@ -2231,8 +2231,7 @@ __webpack_require__.r(__webpack_exports__);
       required: true
     }
   }
-}); // <img :src="this.image.url" class="gallery-image">
-//  style="background: url('{{this.image.url}}')"
+});
 
 /***/ }),
 
@@ -40099,7 +40098,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "gallery-image" })
+  return _c("div", {
+    staticClass: "gallery-image",
+    style: { backgroundImage: "url(" + _vm.image.url + ")" }
+  })
 }
 var staticRenderFns = []
 render._withStripped = true
