@@ -2193,14 +2193,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      images: {}
-    };
+  name: 'Gallery',
+  props: {
+    images: {
+      type: Array,
+      required: true
+    }
   },
   mounted: function mounted() {
-    console.log('Hello Gallery!');
-    console.log(this.images);
+    console.log('Gallery Mounted');
   }
 });
 

@@ -16,14 +16,15 @@
 
 <script>
 export default {
-    data() {
-        return {
-            images: {},
+    name: 'Gallery',
+    props: {
+        images: {
+            type: Array,
+            required: true
         }
     },
     mounted() {
-        console.log('Hello Gallery!');
-        console.log(this.images);
+        console.log('Gallery Mounted');
     }
 }
 </script>

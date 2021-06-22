@@ -1,5 +1,5 @@
 @extends('layouts.base')
 
 @section('content')
-  <gallery-main></gallery-main>
+  <gallery-main :images="{{$images}}"></gallery-main>
 @endsection

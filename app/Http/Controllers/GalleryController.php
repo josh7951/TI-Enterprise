@@ -9,6 +9,7 @@ class GalleryController extends Controller
 {
     public function index() {
         $images = Image::all();
-        return view('gallery');
+        return view('gallery')
+            -> with('images', $images);
     }
 }
