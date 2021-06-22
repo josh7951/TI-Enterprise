@@ -6,13 +6,27 @@
                 <li class="is-active"><a href="#" aria-current="page">Gallery</a></li>
             </ul>
             <section>
-                <div>
-                Hello World!
+                <div v-for = "image in this.images">
+                    {{ image }}
                 </div>
             </section>
         </nav>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            images: {},
+        }
+    },
+    mounted() {
+        console.log('Hello Gallery!');
+        console.log(this.images);
+    }
+}
+</script>
 
 <section class="hero is-medium is-bold">
     <div class="hero-body">
