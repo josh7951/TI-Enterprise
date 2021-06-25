@@ -21,7 +21,7 @@ class ContactFormController extends Controller {
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
-            'gRecaptchaResponse' => [new GoogleReCaptchaV3ValidationRule('contact')]
+            'gRecaptchaResponse' => 'required'
          ]);
 
          //  Store data in database
