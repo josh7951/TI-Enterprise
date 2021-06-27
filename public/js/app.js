@@ -2195,12 +2195,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Gallery',
+  data: function data() {
+    return {
+      imageShown: undefined
+    };
+  },
   props: {
     images: {
       type: Array,
       required: true
+    }
+  },
+  methods: {
+    onChildImageClicked: function onChildImageClicked(value) {
+      this.imageShown = value;
+    },
+    onModalClosed: function onModalClosed() {
+      this.imageShown = undefined;
     }
   }
 });
@@ -2223,6 +2254,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'GalleryImage',
   props: {
@@ -2230,8 +2266,13 @@ __webpack_require__.r(__webpack_exports__);
       type: Object,
       required: true
     }
+  },
+  methods: {
+    onImageClick: function onImageClick(e) {
+      this.$emit('clicked', this.image);
+    }
   }
-});
+}); // :onclick = "'this.displayedImage = console.log(' + this.displayedImage + ');'"
 
 /***/ }),
 
@@ -40044,14 +40085,58 @@ var render = function() {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c(
-      "section",
-      { attrs: { id: "gallery-container" } },
-      _vm._l(this.images, function(image) {
-        return _c("gallery-image", { key: image.id, attrs: { image: image } })
-      }),
-      1
-    )
+    this.imageShown !== undefined
+      ? _c("div")
+      : _c(
+          "section",
+          { attrs: { id: "gallery-container" } },
+          _vm._l(this.images, function(image) {
+            return _c("gallery-image", {
+              key: image.id,
+              attrs: { image: image },
+              on: { clicked: _vm.onChildImageClicked }
+            })
+          }),
+          1
+        ),
+    _vm._v(" "),
+    this.imageShown !== undefined
+      ? _c(
+          "div",
+          { staticClass: "modal is-active", attrs: { id: "image-modal" } },
+          [
+            _c("div", { staticClass: "modal-background" }),
+            _vm._v(" "),
+            _c("div", { staticClass: "modal-card" }, [
+              _c("header", { staticClass: "modal-card-head" }, [
+                _c("p", { staticClass: "modal-card-title" }, [
+                  _vm._v(_vm._s(this.imageShown.name))
+                ]),
+                _vm._v(" "),
+                _c("button", {
+                  staticClass: "delete",
+                  attrs: { "aria-label": "close" },
+                  on: { click: this.onModalClosed }
+                })
+              ]),
+              _vm._v(" "),
+              _c("section", { staticClass: "modal-card-body" }, [
+                _c("div", { staticClass: "columns is-flex is-centered" }, [
+                  _c("img", {
+                    attrs: { id: "modal-image", src: this.imageShown.url }
+                  })
+                ]),
+                _vm._v(" "),
+                this.imageShown.description != null
+                  ? _c("p", { staticClass: "modal-card-description" }, [
+                      _vm._v(_vm._s(this.imageShown.description))
+                    ])
+                  : _vm._e()
+              ])
+            ])
+          ]
+        )
+      : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -40100,7 +40185,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", {
     staticClass: "gallery-image",
-    style: { backgroundImage: "url(" + _vm.image.url + ")" }
+    style: { backgroundImage: "url(" + _vm.image.url + ")" },
+    attrs: { title: _vm.image.name },
+    on: { click: this.onImageClick }
   })
 }
 var staticRenderFns = []
