@@ -33,6 +33,10 @@ Vue.component('navbar', require('./components/Navbar.vue').default);
 Vue.component('dashbar', require('./components/NavbarDash.vue').default);
 Vue.component('aside-menu', require('./components/AsideMenu.vue').default);
 
+/**Components for Gallery */
+Vue.component('gallery-main', require('./components/Gallery.vue').default);
+Vue.component('gallery-image', require('./components/GalleryImage.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
