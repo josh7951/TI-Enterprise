@@ -2211,8 +2211,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Gallery',
   data: function data() {
@@ -40086,21 +40084,6 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     this.imageShown !== undefined
-      ? _c("div")
-      : _c(
-          "section",
-          { attrs: { id: "gallery-container" } },
-          _vm._l(this.images, function(image) {
-            return _c("gallery-image", {
-              key: image.id,
-              attrs: { image: image },
-              on: { clicked: _vm.onChildImageClicked }
-            })
-          }),
-          1
-        ),
-    _vm._v(" "),
-    this.imageShown !== undefined
       ? _c(
           "div",
           { staticClass: "modal is-active", attrs: { id: "image-modal" } },
@@ -40109,9 +40092,14 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "modal-card" }, [
               _c("header", { staticClass: "modal-card-head" }, [
-                _c("p", { staticClass: "modal-card-title" }, [
-                  _vm._v(_vm._s(this.imageShown.name))
-                ]),
+                _c(
+                  "p",
+                  {
+                    staticClass: "modal-card-title",
+                    attrs: { id: "modal-image-name" }
+                  },
+                  [_vm._v(_vm._s(this.imageShown.name))]
+                ),
                 _vm._v(" "),
                 _c("button", {
                   staticClass: "delete",
@@ -40128,7 +40116,7 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 this.imageShown.description != null
-                  ? _c("p", { staticClass: "modal-card-description" }, [
+                  ? _c("p", { attrs: { id: "modal-image-description" } }, [
                       _vm._v(_vm._s(this.imageShown.description))
                     ])
                   : _vm._e()
@@ -40136,7 +40124,18 @@ var render = function() {
             ])
           ]
         )
-      : _vm._e()
+      : _c(
+          "section",
+          { attrs: { id: "gallery-container" } },
+          _vm._l(this.images, function(image) {
+            return _c("gallery-image", {
+              key: image.id,
+              attrs: { image: image },
+              on: { clicked: _vm.onChildImageClicked }
+            })
+          }),
+          1
+        )
   ])
 }
 var staticRenderFns = [

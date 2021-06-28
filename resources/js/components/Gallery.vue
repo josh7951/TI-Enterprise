@@ -6,7 +6,20 @@
                 <li class="is-active"><a href="#" aria-current="page">Gallery</a></li>
             </ul>
         </nav>
-        <div v-if="this.imageShown !== undefined">
+        <div v-if="this.imageShown !== undefined" id="image-modal" class="modal is-active">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title" id="modal-image-name">{{ this.imageShown.name }}</p>
+                    <button class="delete" aria-label="close" v-on:click="this.onModalClosed"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="columns is-flex is-centered">
+                        <img id="modal-image" :src="this.imageShown.url"></img>
+                    </div>
+                    <p v-if="this.imageShown.description != null" id="modal-image-description">{{ this.imageShown.description }}</p>
+                </section>
+            </div>
         </div>
         <section v-else id="gallery-container">
             <gallery-image 
@@ -17,21 +30,6 @@
             >
             </gallery-image>
         </section>
-        <div v-if="this.imageShown !== undefined" id="image-modal" class="modal is-active">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">{{ this.imageShown.name }}</p>
-                    <button class="delete" aria-label="close" v-on:click="this.onModalClosed"></button>
-                </header>
-                <section class="modal-card-body">
-                    <div class="columns is-flex is-centered">
-                        <img id="modal-image" :src="this.imageShown.url"></img>
-                    </div>
-                    <p v-if="this.imageShown.description != null" class="modal-card-description">{{ this.imageShown.description }}</p>
-                </section>
-            </div>
-        </div>
     </div>
 </template>
 
