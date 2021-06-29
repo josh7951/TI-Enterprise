@@ -2782,16 +2782,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mixins: [_formMixin_js__WEBPACK_IMPORTED_MODULE_0__.default],
   data: function data() {
     return {
-      'action': '/login',
+      'action': this.loginroute,
       siteKey: "6LcwXTYbAAAAAGKuO59SWnNnpmfLdl262ZT_MrOK"
     };
   },
-  props: ['forgotpassword']
+  props: ['forgotpassword', 'loginroute', 'registerroute']
 });
 
 /***/ }),
@@ -3037,6 +3039,32 @@ __webpack_require__.r(__webpack_exports__);
 
           if (error.response.status === 422) {
             _this.errors = error.response.data.errors || {};
+          }
+        });
+      }
+    },
+    authSubmit: function authSubmit() {
+      var _this2 = this;
+
+      if (this.loaded) {
+        this.loaded = false;
+        this.success = false;
+        this.errors = {};
+        axios.post(this.action, this.fields).then(function (response) {
+          _this2.$refs.captcha.execute();
+
+          _this2.fields = {}; //clear input fields
+
+          _this2.loaded = true;
+          _this2.success = true;
+          window.location.href = '/home';
+        })["catch"](function (error) {
+          _this2.$refs.captcha.execute();
+
+          _this2.loaded = true;
+
+          if (error.response.status === 422) {
+            _this2.errors = error.response.data.errors || {};
           }
         });
       }
@@ -41530,7 +41558,7 @@ var render = function() {
             on: {
               submit: function($event) {
                 $event.preventDefault()
-                return _vm.formSubmit.apply(null, arguments)
+                return _vm.authSubmit.apply(null, arguments)
               }
             }
           },
@@ -41560,7 +41588,8 @@ var render = function() {
                     attrs: {
                       type: "email",
                       name: "email",
-                      placeholder: "john@domain.com"
+                      placeholder: "john@domain.com",
+                      autocomplete: "email"
                     },
                     domProps: { value: _vm.fields.email },
                     on: {
@@ -41614,7 +41643,11 @@ var render = function() {
                     }
                   ],
                   staticClass: "input",
-                  attrs: { type: "password", name: "password" },
+                  attrs: {
+                    type: "password",
+                    name: "password",
+                    autocomplete: "current-password"
+                  },
                   domProps: { value: _vm.fields.password },
                   on: {
                     input: function($event) {
@@ -41661,7 +41694,7 @@ var render = function() {
               attrs: {
                 "site-key": _vm.siteKey,
                 id: "captcha",
-                action: "formSubmit"
+                action: "authSubmit"
               },
               model: {
                 value: _vm.fields.gRecaptchaResponse,
@@ -41672,7 +41705,16 @@ var render = function() {
               }
             }),
             _vm._v(" "),
-            _vm._m(3)
+            _vm._m(3),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Need to make an account? "),
+              _c("a", { attrs: { href: _vm.registerroute } }, [
+                _vm._v("Register here")
+              ])
+            ])
           ],
           1
         )
@@ -41713,9 +41755,11 @@ var staticRenderFns = [
       _c("p", { staticClass: "control" }, [
         _c("br"),
         _vm._v(" "),
-        _c("button", { staticClass: "button is-success" }, [
-          _vm._v("\n            Login\n          ")
-        ])
+        _c(
+          "button",
+          { staticClass: "button is-success", attrs: { type: "submit" } },
+          [_vm._v("\n            Login\n          ")]
+        )
       ])
     ])
   }
