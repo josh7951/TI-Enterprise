@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TournamentController;
+use App\Http\Controllers\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +26,7 @@ Route::get('/about', function() {
     return view('about');
 });
 
-Route::get('/team-gallery', function() {
-    return view('gallery');
-});
+Route::get('/team-gallery', [GalleryController::class, 'index']);
 
 Route::get('/store', function() {
     return view('store');

@@ -11,6 +11,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="\css\mystyles.min.css">
     <link rel="stylesheet" href="\css\glider.css">
+    <link rel="stylesheet" href="\css\gallery.css">
     <link rel="icon" href="\images\LOGO\True-Image-Logo-V1.png">
   </head>
   <body>
