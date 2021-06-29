@@ -31,6 +31,7 @@ Vue.component('navbar', require('./components/Navbar.vue').default);
 
 /** Components for admin panel */
 Vue.component('login', require('./components/auth/Login.vue').default);
+Vue.component('forgot-pass', require('./components/auth/ForgotPassword.vue').default);
 Vue.component('dashbar', require('./components/NavbarDash.vue').default);
 Vue.component('aside-menu', require('./components/AsideMenu.vue').default);
 
