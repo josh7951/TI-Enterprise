@@ -28,9 +28,9 @@ Route::get('/about', function() {
 
 Route::get('/team-gallery', [GalleryController::class, 'index']);
 
-Route::get('/store', function() {
+/*Route::get('/store', function() {
     return view('store');
-});
+});*/
 
 Route::get('/tournament-schedule', function() {
     return view('tournaments');
