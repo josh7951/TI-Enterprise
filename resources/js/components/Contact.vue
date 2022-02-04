@@ -22,10 +22,10 @@
     <div class="column is-two-fifths">
       <div v-if="success" class="message is-success">
         <div class="message-body">
-          Message sent! We will get back to you as soon as possible!
+          Message sent! We have received your message and would like to thank you for writing to us. We will get back to you as soon as possible!
         </div>
       </div>
-      <form @submit.prevent="ContactUsForm" class="form">
+      <form @submit.prevent="formSubmit" class="form">
         <input type="hidden" name="_token" v-bind:value="csrf">
         <!--Start Contact Form-->
         <!--Name Field-->
@@ -72,8 +72,8 @@
               v-model="fields.gRecaptchaResponse"
               ref="captcha"
               :site-key="siteKey"
-              id="contact_us_id"
-              action="contact"
+              id="captcha"
+              action="formSubmit"
             ></google-re-captcha-v3> <!-- removed inline -->
           </div>
         <button class="button is-info">Send Message</button>
@@ -85,39 +85,17 @@
 </template>
 
 <script>
-  import GoogleReCaptchaV3 from './googlerecaptchav3/GoogleReCaptchaV3.vue';
+  import formMixin from '../formMixin.js';
+
   export default {
-    components: { GoogleReCaptchaV3 },
+    mixins: [ formMixin ],
     data() {
       return {
-        csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
-        fields: {},
-        errors: {},
-        success: false,
-        loaded: true,
+        'action': '/contact',
         siteKey: process.env.MIX_SITE_KEY,
+        
       }
-    },
-    methods: {
-      ContactUsForm() {
-        if(this.loaded){
-          this.loaded = false;
-          this.success = false;
-          this.errors = {};
-          axios.post('/contact', this.fields).then(response => {
-            this.$refs.captcha.execute();
-            this.fields = {}; //clear input fields
-            this.loaded = true;
-            this.success = true;
-          }).catch(error => {
-            this.$refs.captcha.execute();
-            this.loaded = true;
-            if(error.response.status === 422){
-              this.errors = error.response.data.errors || {};
-            }
-          });
-        }
-      },
-    },
+    }
+
   }
 </script>

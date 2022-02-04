@@ -27,7 +27,7 @@
             <a class="navbar-item" href="https://www.bassresource.com/" target="_blank">Bass Resource - Fishing Guide</a>
             <a class="navbar-item" href="https://www.flwfishing.com/" target="_blank">Fishing League Worldwide</a>
             <a class="navbar-item" href="https://www.gamakatsu.com/" target="_blank">Gamakatsu Hooks</a>
-            <a class="navbar-item" href="https://www.lakesideboatsinc.com/" target="_blank">Lakeside Boat & Marine</a>
+            <a class="navbar-item" href="https://www.lakesideboatsinc.com/" target="_blank">Lakeside Boat &amp; Marine</a>
             <a class="navbar-item" href="https://www.ownerhooks.com/" target="_blank">Owner Hooks</a>
             <a class="navbar-item" href="https://www.tacklewarehouse.com/" target="_blank">Tackle Warehouse</a>
             <a class="navbar-item" href="https://tearshot.com/" target="_blank">Team Davies Tackles</a>
