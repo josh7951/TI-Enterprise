@@ -21,13 +21,13 @@ class ContactFormController extends Controller {
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
-            'gRecaptchaResponse' => [new GoogleReCaptchaV3ValidationRule('contact')]
+            'gRecaptchaResponse' => 'required'
          ]);
-
-         //  Store data in database
+         
+        //  Store data in database
         Contact::create($request->all());
-
-         \Mail::send('mail.contactus', array(
+        
+        \Mail::send('mail.contactus', array(
             'name' => $request->get('name'),
             'email' => $request->get('email'),
             'user_query' => $request->get('message'),
@@ -36,7 +36,7 @@ class ContactFormController extends Controller {
             $message->to('wapseniorproj@gmail.com', 'Admin')->subject('test');
         });
         
-        return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
+        return back();
     }
 
 }
