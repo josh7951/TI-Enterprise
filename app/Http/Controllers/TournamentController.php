@@ -14,9 +14,10 @@ class TournamentController extends Controller
      */
     public function index()
     {
-        $tournaments = Tournaments::all();
+        $tournaments = Tournaments::latest()->paginate(10);
 
-        return view('admin.tournamentindex', compact('tournaments'));
+        return view('admin.tournamentindex', compact('tournaments'))
+            ->with('i', (request()->input('page', 1) - 1) * 10);
     }
 
     /**
